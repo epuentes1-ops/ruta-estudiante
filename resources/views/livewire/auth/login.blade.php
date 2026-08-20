@@ -220,7 +220,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
 
     </div>
 
-    <div class="flex flex-col gap-6">
+    {{-- <div class="flex flex-col gap-6">
         <a href="{{ route('saml.login') }}"
             class="flex items-center justify-center gap-2 w-full px-4 py-2.5
                bg-[#2F2FEE] hover:bg-[#1A1A9E] text-white font-semibold
@@ -233,7 +233,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
 
             Iniciar sesión con Microsoft
         </a>
-    </div>
+    </div> --}}
 
     @if (Route::has('register'))
         <div class="space-x-1 rtl:space-x-reverse text-center text-sm text-zinc-600 dark:text-zinc-400">
