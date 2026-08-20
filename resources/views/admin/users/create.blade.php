@@ -1,4 +1,4 @@
-<x-layouts.app :title="__('EduTips - Usuarios')">
+<x-layouts.app :title="__('Ruta del estudiante - Usuarios')">
     @include('partials.adminusers-heading')
 
     <div class="w-full p-6">
