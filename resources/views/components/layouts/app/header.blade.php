@@ -206,6 +206,11 @@
                         target="_blank" rel="noopener noreferrer">
                         Repositorio CRAI
                     </flux:menu.item>
+
+                    <flux:menu.item icon="computer-desktop" href="https://virtual.ucompensar.edu.co"
+                        target="_blank" rel="noopener noreferrer">
+                        Solución E-Learning
+                    </flux:menu.item>
                 </flux:menu>
             </flux:dropdown>
         </div>
@@ -233,7 +238,7 @@
                     <rect x="4" y="15" width="5" height="5" rx="1" />
                     <rect x="15" y="15" width="5" height="5" rx="1" />
                 </svg>
-                Aqui empieza todo
+                Aquí empieza todo
             </a>
 
             <flux:dropdown position="bottom" align="start">
@@ -279,9 +284,9 @@
                         href="https://repositoriocrai.ucompensar.edu.co/" target="_blank"
                         :label="__('Repositorio CRAI')" />
                 </flux:tooltip>
-                <flux:tooltip :content="__('Solucion E-Learning')" position="bottom">
+                <flux:tooltip :content="__('Solución E-Learning')" position="bottom">
                     <flux:navbar.item class="h-10 max-lg:hidden [&>div>svg]:size-5" icon="computer-desktop"
-                        href="https://virtual.ucompensar.edu.co" target="_blank" :label="__('Solucion E-Learning')" />
+                        href="https://virtual.ucompensar.edu.co" target="_blank" :label="__('Solución E-Learning')" />
                 </flux:tooltip>
             </flux:navbar>
 
