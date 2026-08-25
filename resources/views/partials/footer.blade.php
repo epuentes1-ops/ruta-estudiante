@@ -273,7 +273,7 @@
                         target="_blank">Radica tus PQR</a></li>
                 <li><a href="https://ucompensar.edu.co/regimen-tributario-especial/" target="_blank">Régimen Tributario
                         Especial</a></li>
-                <li><a href="https://ucompensar.edu.co/pdf/documentos/POL-PAJ-02-V08-Tratamiento-de-datos-personales.pdf?pid=18895"
+                <li><a href="https://ucompensar.edu.co/pdf/documentos/Tratamiento-de-datos-personales.pdf"
                         target="_blank">Aviso de privacidad</a></li>
                 <li><a href="https://www.elempleo.com/co/sitio-empresarial/ucompensar" target="_blank"
                         class="btn-trabaja">Trabaja con Nosotros</a></li>

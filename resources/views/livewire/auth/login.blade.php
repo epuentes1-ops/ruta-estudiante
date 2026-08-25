@@ -185,7 +185,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
             </p>
 
             <div class="mt-2">
-                <a href="https://ucompensar.edu.co/pdf/documentos/POL-PAJ-02-V08-Tratamiento-de-datos-personales.pdf?pid=18895"
+                <a href="https://ucompensar.edu.co/pdf/documentos/Tratamiento-de-datos-personales.pdf"
                     target="_blank" class="text-sm text-blue-600 hover:underline">
                     Ver política de tratamiento de datos personales
                 </a>
