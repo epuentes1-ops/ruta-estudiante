@@ -1,4 +1,4 @@
-<x-layouts.app :title="__('EduTips - Tu camino docente')">
+<x-layouts.app :title="__('Ruta del estudiante - Tu camino docente')">
     <div class="flex flex-col items-center w-full gap-10 p-6">
 
         <!-- Banner principal -->

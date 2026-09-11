@@ -1,4 +1,4 @@
-<x-layouts.app :title="__('EduTips - Caja de herramientas')">
+<x-layouts.app :title="__('Ruta del estudiante - Caja de herramientas')">
 
     <style>
         /* Ajuste del iframe */

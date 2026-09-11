@@ -62,7 +62,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
 
         AuthAuditService::log('login_success', request(), Auth::user(), Auth::user()?->email, true, null, ['method' => 'email_password'], 'local');
 
-        $this->redirectIntended(default: route('aquiempiezatodo', absolute: false), navigate: true);
+        $this->redirectIntended(default: route('inicio', absolute: false), navigate: true);
     }
 
     /**
@@ -180,7 +180,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
                 :label="__('Acepto la política de tratamiento de datos personales')" />
 
             <p class="mt-2 text-xs text-zinc-500 dark:text-zinc-400">
-                Al ingresar a EduTips autorizo el tratamiento de mis datos
+                Al ingresar a Rutal del Estudiante, autorizo el tratamiento de mis datos
                 personales conforme a la política de tratamiento de datos personales institucional.
             </p>
 

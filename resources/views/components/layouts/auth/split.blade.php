@@ -11,7 +11,7 @@
 
         <!-- Columna izquierda con imagen de fondo -->
         <div class="relative hidden h-full flex-col p-10 text-white lg:flex dark:border-e dark:border-neutral-800 bg-cover bg-center"
-            style="background-image: url('{{ asset('images/login_1/img3.png') }}');">
+            style="background-image: url('{{ asset('images/login_1/img2.jpg') }}');">
             <!-- Capa de superposición oscura para dar contraste -->
             <div class="absolute inset-0 bg-black/60"></div>
 

@@ -1,4 +1,4 @@
-<x-layouts.app :title="__('EduTips - Clases con alma')">
+<x-layouts.app :title="__('Ruta del estudiante - Clases con alma')">
     <style>
         /* Estilo para el modal */
         #imageModal {

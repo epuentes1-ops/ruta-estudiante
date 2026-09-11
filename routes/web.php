@@ -50,9 +50,9 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
-Route::view('aquiempiezatodo', 'aquiempiezatodo')
+Route::view('inicio', 'inicio')
     ->middleware(['auth', 'verified'])
-    ->name('aquiempiezatodo');
+    ->name('inicio');
 
 Route::view('tucaminodocente', 'tucaminodocente')
     ->middleware(['auth', 'verified'])

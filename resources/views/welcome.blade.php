@@ -7,9 +7,9 @@
 
     <title>{{ $title ?? config('app.name') }}</title>
 
-    <link rel="icon" href="{{ asset('images/logos_1/faviconEdutips.svg') }}" sizes="32x32">
-    <link rel="icon" href="{{ asset('images/logos_1/faviconEdutips.svg') }}" sizes="192x192">
-    <link rel="icon" href="{{ asset('images/logos/faviconEdutips.svg') }}">
+    <link rel="icon" href="{{ asset('images/logos_1/faviconRutaE.svg') }}" sizes="32x32">
+    <link rel="icon" href="{{ asset('images/logos_1/faviconRutaE.svg') }}" sizes="192x192">
+    <link rel="icon" href="{{ asset('images/logos_1/faviconRutaE.svg') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -29,7 +29,7 @@
 
 <body class="min-vh-100 d-flex align-items-center justify-content-center bg-dark"
     style="
-        background-image: url('{{ asset('images/login_1/Page under construction.png') }}');
+        background-image: url('{{ asset('images/login_1/img1.jpg') }}');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -53,7 +53,7 @@
                 <h2 class="fw-semibold mb-3">Bienvenidos a</h2>
 
                 <!-- Logo principal -->
-                <img src="{{ asset('images/logos_1/getsitelogo.png') }}" 
+                <img src="{{ asset('images/logos_1/LogoRutaE.svg') }}" 
                      alt="Logo2" 
                      class="img-fluid mb-4"
                      style="max-width: 250px; width: 90%; height: auto;">
@@ -63,8 +63,8 @@
                 <div class="w-100" style="max-width: 300px;">
                     @if (Route::has('login'))
                         @auth
-                            <a href="{{ url('/aquiempiezatodo') }}" class="btn btn-secondary mb-3 w-100">
-                                Aquí empieza todo
+                            <a href="{{ url('/inicio') }}" class="btn btn-secondary mb-3 w-100">
+                                Inicio
                             </a>
                         @else
                             <a href="{{ route('login') }}" class="btn btn-secondary mb-3 w-100">

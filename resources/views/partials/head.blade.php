@@ -4,9 +4,9 @@
 
 <title>{{ $title ?? config('app.name') }}</title>
 
-<link rel="icon" href="{{ asset('images/logos_1/faviconEdutips.svg') }}" sizes="32x32">
-<link rel="icon" href="{{ asset('images/logos_1/faviconEdutips.svg') }}" sizes="192x192">
-<link rel="icon" href="{{ asset('images/logos_1/faviconEdutips.svg') }}">
+<link rel="icon" href="{{ asset('images/logos_1/faviconRutaE.svg') }}" sizes="32x32">
+<link rel="icon" href="{{ asset('images/logos_1/faviconRutaE.svg') }}" sizes="192x192">
+<link rel="icon" href="{{ asset('images/logos_1/faviconRutaE.svg') }}">
 
 <link rel="preconnect" href="https://fonts.bunny.net">
 <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />

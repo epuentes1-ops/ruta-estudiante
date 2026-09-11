@@ -1,4 +1,4 @@
-<x-layouts.app :title="__('EduTips - ¿Cómo van tus estudiantes?')">
+<x-layouts.app :title="__('Ruta del estudiante - ¿Cómo van tus estudiantes?')">
 
     <div class="p-6 space-y-12">
 

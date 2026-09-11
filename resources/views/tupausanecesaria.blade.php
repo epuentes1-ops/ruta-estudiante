@@ -1,4 +1,4 @@
-<x-layouts.app :title="__('EduTips - Tu pausa necesaria')">
+<x-layouts.app :title="__('Ruta del estudiante - Tu pausa necesaria')">
 
     <div class="flex flex-col items-center w-full gap-10 p-6">
 

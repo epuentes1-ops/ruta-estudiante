@@ -9,14 +9,14 @@
     <flux:header container class="border-b border-zinc-200 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900">
         <flux:sidebar.toggle class="lg:hidden" icon="bars-2" inset="left" />
 
-        <a href="{{ route('aquiempiezatodo') }}" class="ms-2 me-5 flex items-center space-x-2 rtl:space-x-reverse lg:ms-0"
+        <a href="{{ route('inicio') }}" class="ms-2 me-5 flex items-center space-x-2 rtl:space-x-reverse lg:ms-0"
             wire:navigate>
             <x-app-logo />
         </a>
         
 
         <flux:navbar class="-mb-px max-lg:hidden">
-            <flux:navbar.item icon="layout-grid" :href="route('aquiempiezatodo')" :current="request()->routeIs('aquiempiezatodo')"
+            <flux:navbar.item icon="layout-grid" :href="route('inicio')" :current="request()->routeIs('inicio')"
                 wire:navigate>
                 {{ __('Aqui empieza todo') }}
             </flux:navbar.item>
@@ -91,15 +91,15 @@
         class="lg:hidden border-e border-zinc-200 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900">
         <flux:sidebar.toggle class="lg:hidden" icon="x-mark" />
 
-        <a href="{{ route('aquiempiezatodo') }}" class="ms-1 flex items-center space-x-2 rtl:space-x-reverse" wire:navigate>
+        <a href="{{ route('inicio') }}" class="ms-1 flex items-center space-x-2 rtl:space-x-reverse" wire:navigate>
             <x-app-logo />
         </a>
 
         <flux:navlist variant="outline">
             <flux:navlist.group :heading="__('Platform')">
-                <flux:navlist.item icon="layout-grid" :href="route('aquiempiezatodo')"
-                    :current="request()->routeIs('aquiempiezatodo')" wire:navigate>
-                    {{ __('aquiempiezatodo') }}
+                <flux:navlist.item icon="layout-grid" :href="route('inicio')"
+                    :current="request()->routeIs('inicio')" wire:navigate>
+                    {{ __('inicio') }}
                 </flux:navlist.item>
             </flux:navlist.group>
         </flux:navlist>
@@ -187,7 +187,7 @@
                 </button>
 
                 <flux:menu class="min-w-72">
-                    <flux:menu.item icon="layout-grid" :href="route('aquiempiezatodo')" wire:navigate>
+                    <flux:menu.item icon="layout-grid" :href="route('inicio')" wire:navigate>
                         Aqui empieza todo
                     </flux:menu.item>
 
@@ -216,19 +216,19 @@
         </div>
 
         {{-- Logo con dimensiones controladas. --}}
-        <a href="{{ route('aquiempiezatodo') }}" wire:navigate
+        <a href="{{ route('inicio') }}" wire:navigate
             class="inline-flex min-h-11 shrink-0 items-center rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-zinc-950"
             aria-label="Ruta del estudiante, ir al inicio">
-            <img src="{{ asset('images/logos_1/getsitelogo.png') }}" alt="Ruta del estudiante"
+            <img src="{{ asset('images/logos_1/LogoRutaE.png') }}" alt="Ruta del estudiante"
                 class="h-auto max-h-[64px] w-auto max-w-[168px] object-contain sm:max-w-[190px]">
         </a>
 
         {{-- Navegacion horizontal de escritorio. --}}
         <nav class="ml-3 hidden self-stretch lg:flex" aria-label="Navegacion principal">
-            <a href="{{ route('aquiempiezatodo') }}" wire:navigate
-                @if (request()->routeIs('aquiempiezatodo')) aria-current="page" @endif
+            <a href="{{ route('inicio') }}" wire:navigate
+                @if (request()->routeIs('inicio')) aria-current="page" @endif
                 class="relative inline-flex h-full items-center gap-2 border-b-[3px] px-4 text-sm font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-cyan-500
-                    {{ request()->routeIs('aquiempiezatodo')
+                    {{ request()->routeIs('inicio')
                         ? 'border-zinc-900 text-zinc-950 dark:border-white dark:text-white'
                         : 'border-transparent text-zinc-600 hover:border-zinc-300 hover:text-zinc-950 dark:text-zinc-300 dark:hover:border-zinc-700 dark:hover:text-white' }}">
                 <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
@@ -238,7 +238,7 @@
                     <rect x="4" y="15" width="5" height="5" rx="1" />
                     <rect x="15" y="15" width="5" height="5" rx="1" />
                 </svg>
-                Aquí empieza todo
+                Inicio
             </a>
 
             <flux:dropdown position="bottom" align="start">
