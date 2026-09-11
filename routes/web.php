@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Auth\SAMLController;
 use App\Http\Controllers\SectionRatingController;
 
+
 Route::prefix('saml')->group(function () {
 
     // SP → IdP (enviar al login de Microsoft)
@@ -26,25 +27,6 @@ Route::prefix('saml')->group(function () {
     Route::get('/sls', [SAMLController::class, 'sls'])->name('saml.sls');
 });
 
-// Route::get('/auth/microsoft', function () {
-//     return Socialite::driver('microsoft')->redirect();
-// })->name('login.microsoft');
-
-// Route::get('/auth/microsoft/callback', function () {
-//     $microsoftUser = Socialite::driver('microsoft')->user();
-
-//     $user = User::updateOrCreate(
-//         ['email' => $microsoftUser->getEmail()],
-//         [
-//             'name' => $microsoftUser->getName(),
-//             'email_verified_at' => now(),
-//         ]
-//     );
-
-//     Auth::login($user);
-
-//     return redirect('/aquiempiezatodo');
-// });
 
 Route::get('/', function () {
     return view('welcome');
@@ -74,9 +56,7 @@ Route::view('aldia', 'aldia')
     ->middleware(['auth', 'verified'])
     ->name('aldia');
 
-// Route::view('comovantusestudiantes', 'comovantusestudiantes')
-//     ->middleware(['auth', 'verified'])
-//     ->name('comovantusestudiantes');
+
 
 Route::middleware(['auth'])->group(function () {
     Route::redirect('settings', 'settings/profile');
@@ -100,4 +80,20 @@ Route::get('/section-rating', [SectionRatingController::class, 'show'])
     ->middleware('auth')
     ->name('section-rating.show');
 
+/*
+|--------------------------------------------------------------------------
+| Rutas del portal Ruta del estudiante
+|--------------------------------------------------------------------------
+*/
+
+require __DIR__ . '/secciones/vive-al-maximo.php';
+require __DIR__ . '/secciones/tramites-academicos.php';
+require __DIR__ . '/secciones/la-u-te-acompana.php';
+require __DIR__ . '/secciones/centro-de-recursos.php';
+require __DIR__ . '/secciones/ocio.php';
+
+
 require __DIR__ . '/auth.php';
+
+
+

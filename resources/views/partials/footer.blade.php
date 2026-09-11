@@ -242,8 +242,8 @@
                         alt="Certificación NTC 5581">
                 </a>
                 <a >
-                    <img src="https://ucompensar.edu.co/wp-content/uploads/2026/08/QM-logo-shadowbox-200px.png"
-                        alt="Certificación NTC 5581">
+                    <img src="https://ucompensar.edu.co/wp-content/uploads/2026/09/quality-matters.webp"
+                        alt="Certificación QM">
                 </a>
             </div>
         </div>
