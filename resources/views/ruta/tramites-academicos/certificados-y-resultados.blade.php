@@ -1,4 +1,4 @@
-<x-layouts.app :title="__('Participa y comunícate')">
+<x-layouts.app :title="__('Certificados y resultados')">
 
     <main class="w-full px-6 py-10">
 

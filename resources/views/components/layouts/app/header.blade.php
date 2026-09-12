@@ -69,29 +69,22 @@
                     'route' => 'tramites-academicos.index',
                 ],
                 [
-                    'label' => 'Comienza tu experiencia virtual',
-                    'route' => 'tramites-academicos.comienza-tu-experiencia-virtual',
+                    'label' => 'Matrícula, cursos y pagos',
+                    'route' => 'tramites-academicos.matricula-cursos-y-pagos',
                 ],
                 [
-                    'label' => 'Herramientas digitales para estudiar',
-                    'route' => 'tramites-academicos.herramientas-digitales-para-estudiar',
+                    'label' => 'Novedades académicas',
+                    'route' => 'tramites-academicos.novedades-academicas',
                 ],
                 [
-                    'label' => 'Organiza tu aprendizaje',
-                    'route' => 'tramites-academicos.organiza-tu-aprendizaje',
+                    'label' => 'Certificados y resultados',
+                    'route' => 'tramites-academicos.certificados-y-resultados',
                 ],
                 [
-                    'label' => 'Participa y comunícate',
-                    'route' => 'tramites-academicos.participa-y-comunicate',
+                    'label' => 'Opciones y proceso de grado',
+                    'route' => 'tramites-academicos.opciones-y-proceso-de-grado',
                 ],
-                [
-                    'label' => 'Evaluación y progreso',
-                    'route' => 'tramites-academicos.evaluacion-y-progreso',
-                ],
-                [
-                    'label' => 'Acompañamiento y servicio',
-                    'route' => 'tramites-academicos.acompanamiento-y-servicio',
-                ],
+                
             ],
         ],
 
@@ -111,29 +104,26 @@
                     'route' => 'la-u-te-acompana.index',
                 ],
                 [
-                    'label' => 'Comienza tu experiencia virtual',
-                    'route' => 'la-u-te-acompana.comienza-tu-experiencia-virtual',
+                    'label' => 'Bienestar físico y hábitos saludables',
+                    'route' => 'la-u-te-acompana.bienestar-fisico-y-habitos-saludables',
                 ],
                 [
-                    'label' => 'Herramientas digitales para estudiar',
-                    'route' => 'la-u-te-acompana.herramientas-digitales-para-estudiar',
+                    'label' => 'Estudio, familia y cuidado',
+                    'route' => 'la-u-te-acompana.estudio-familia-y-cuidado',
                 ],
                 [
-                    'label' => 'Organiza tu aprendizaje',
-                    'route' => 'la-u-te-acompana.organiza-tu-aprendizaje',
+                    'label' => 'Bienestar emocional y convivencia',
+                    'route' => 'la-u-te-acompana.bienestar-emocional-y-convivencia',
                 ],
                 [
-                    'label' => 'Participa y comunícate',
-                    'route' => 'la-u-te-acompana.participa-y-comunicate',
+                    'label' => 'Redes de apoyo y servicios',
+                    'route' => 'la-u-te-acompana.redes-de-apoyo-y-servicios',
                 ],
                 [
-                    'label' => 'Evaluación y progreso',
-                    'route' => 'la-u-te-acompana.evaluacion-y-progreso',
+                    'label' => 'Vida universitaria y comunidad',
+                    'route' => 'la-u-te-acompana.vida-universitaria-y-comunidad',
                 ],
-                [
-                    'label' => 'Acompañamiento y servicio',
-                    'route' => 'la-u-te-acompana.acompanamiento-y-servicio',
-                ],
+                
             ],
         ],
 
@@ -153,29 +143,22 @@
                     'route' => 'centro-de-recursos.index',
                 ],
                 [
-                    'label' => 'Comienza tu experiencia virtual',
-                    'route' => 'centro-de-recursos.comienza-tu-experiencia-virtual',
+                    'label' => 'Acceso y orientación',
+                    'route' => 'centro-de-recursos.acceso-y-orientacion',
                 ],
                 [
-                    'label' => 'Herramientas digitales para estudiar',
-                    'route' => 'centro-de-recursos.herramientas-digitales-para-estudiar',
+                    'label' => 'Recursos de información',
+                    'route' => 'centro-de-recursos.recursos-de-informacion',
                 ],
                 [
-                    'label' => 'Organiza tu aprendizaje',
-                    'route' => 'centro-de-recursos.organiza-tu-aprendizaje',
+                    'label' => 'Escritura e integridad académica',
+                    'route' => 'centro-de-recursos.escritura-e-integridad-academica',
                 ],
                 [
-                    'label' => 'Participa y comunícate',
-                    'route' => 'centro-de-recursos.participa-y-comunicate',
+                    'label' => 'Investigación y trabajos académicos',
+                    'route' => 'centro-de-recursos.investigacion-y-trabajos-academicos',
                 ],
-                [
-                    'label' => 'Evaluación y progreso',
-                    'route' => 'centro-de-recursos.evaluacion-y-progreso',
-                ],
-                [
-                    'label' => 'Acompañamiento y servicio',
-                    'route' => 'centro-de-recursos.acompanamiento-y-servicio',
-                ],
+                
             ],
         ],
 

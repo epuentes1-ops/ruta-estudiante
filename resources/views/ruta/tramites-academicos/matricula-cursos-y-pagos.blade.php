@@ -1,4 +1,4 @@
-<x-layouts.app :title="__('Herramientas digitales para estudiar')">
+<x-layouts.app :title="__('Matrícula, cursos y pagos')">
 
     <main class="w-full px-6 py-10">
 

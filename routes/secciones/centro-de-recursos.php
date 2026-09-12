@@ -13,33 +13,23 @@ Route::middleware(['auth', 'verified'])
 
         // Subsecciones
         Route::view(
-            '/comienza-tu-experiencia-virtual',
-            'ruta.centro-de-recursos.comienza-tu-experiencia-virtual'
-        )->name('comienza-tu-experiencia-virtual');
+            '/acceso-y-orientacion',
+            'ruta.centro-de-recursos.acceso-y-orientacion'
+        )->name('acceso-y-orientacion');
 
         Route::view(
-            '/herramientas-digitales-para-estudiar',
-            'ruta.centro-de-recursos.herramientas-digitales-para-estudiar'
-        )->name('herramientas-digitales-para-estudiar');
+            '/recursos-de-informacion',
+            'ruta.centro-de-recursos.recursos-de-informacion'
+        )->name('recursos-de-informacion');
 
         Route::view(
-            '/organiza-tu-aprendizaje',
-            'ruta.centro-de-recursos.organiza-tu-aprendizaje'
-        )->name('organiza-tu-aprendizaje');
+            '/escritura-e-integridad-academica',
+            'ruta.centro-de-recursos.escritura-e-integridad-academica'
+        )->name('escritura-e-integridad-academica');
 
         Route::view(
-            '/participa-y-comunicate',
-            'ruta.centro-de-recursos.participa-y-comunicate'
-        )->name('participa-y-comunicate');
-
-        Route::view(
-            '/evaluacion-y-progreso',
-            'ruta.centro-de-recursos.evaluacion-y-progreso'
-        )->name('evaluacion-y-progreso');
-
-        Route::view(
-            '/acompanamiento-y-servicio',
-            'ruta.centro-de-recursos.acompanamiento-y-servicio'
-        )->name('acompanamiento-y-servicio');
+            '/investigacion-y-trabajos-academicos',
+            'ruta.centro-de-recursos.investigacion-y-trabajos-academicos'
+        )->name('investigacion-y-trabajos-academicos');
 
     });

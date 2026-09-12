@@ -1,4 +1,4 @@
-<x-layouts.app :title="__('Acompañamiento y servicio')">
+<x-layouts.app :title="__('Estudio, familia y cuidado')">
 
     <main class="w-full px-6 py-10">
 

@@ -1,4 +1,4 @@
-<x-layouts.app :title="__('Acompañamiento y servicio')">
+<x-layouts.app :title="__('Vida universitaria y comunidad')">
 
     <main class="w-full px-6 py-10">
 

@@ -13,33 +13,28 @@ Route::middleware(['auth', 'verified'])
 
         // Subsecciones
         Route::view(
-            '/comienza-tu-experiencia-virtual',
-            'ruta.la-u-te-acompana.comienza-tu-experiencia-virtual'
-        )->name('comienza-tu-experiencia-virtual');
+            '/bienestar-fisico-y-habitos-saludables',
+            'ruta.la-u-te-acompana.bienestar-fisico-y-habitos-saludables'
+        )->name('bienestar-fisico-y-habitos-saludables');
 
         Route::view(
-            '/herramientas-digitales-para-estudiar',
-            'ruta.la-u-te-acompana.herramientas-digitales-para-estudiar'
-        )->name('herramientas-digitales-para-estudiar');
+            '/estudio-familia-y-cuidado',
+            'ruta.la-u-te-acompana.estudio-familia-y-cuidado'
+        )->name('estudio-familia-y-cuidado');
 
         Route::view(
-            '/organiza-tu-aprendizaje',
-            'ruta.la-u-te-acompana.organiza-tu-aprendizaje'
-        )->name('organiza-tu-aprendizaje');
+            '/bienestar-emocional-y-convivencia',
+            'ruta.la-u-te-acompana.bienestar-emocional-y-convivencia'
+        )->name('bienestar-emocional-y-convivencia');
 
         Route::view(
-            '/participa-y-comunicate',
-            'ruta.la-u-te-acompana.participa-y-comunicate'
-        )->name('participa-y-comunicate');
+            '/redes-de-apoyo-y-servicios',
+            'ruta.la-u-te-acompana.redes-de-apoyo-y-servicios'
+        )->name('redes-de-apoyo-y-servicios');
 
         Route::view(
-            '/evaluacion-y-progreso',
-            'ruta.la-u-te-acompana.evaluacion-y-progreso'
-        )->name('evaluacion-y-progreso');
-
-        Route::view(
-            '/acompanamiento-y-servicio',
-            'ruta.la-u-te-acompana.acompanamiento-y-servicio'
-        )->name('acompanamiento-y-servicio');
+            '/vida-universitaria-y-comunidad',
+            'ruta.la-u-te-acompana.vida-universitaria-y-comunidad'
+        )->name('vida-universitaria-y-comunidad');
 
     });

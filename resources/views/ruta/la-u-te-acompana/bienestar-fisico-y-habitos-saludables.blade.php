@@ -1,4 +1,4 @@
-<x-layouts.app :title="__('Evaluación y progreso')">
+<x-layouts.app :title="__('Bienestar físico y hábitos saludables')">
 
     <main class="w-full px-6 py-10">
 

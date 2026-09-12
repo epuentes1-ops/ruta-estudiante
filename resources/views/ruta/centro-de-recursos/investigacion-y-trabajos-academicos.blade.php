@@ -1,4 +1,4 @@
-<x-layouts.app :title="__('Comienza tu experiencia virtual')">
+<x-layouts.app :title="__('Investigación y trabajos académicos')">
 
     <main class="w-full px-6 py-10">
 

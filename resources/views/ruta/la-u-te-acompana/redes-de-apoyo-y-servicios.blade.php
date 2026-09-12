@@ -1,4 +1,4 @@
-<x-layouts.app :title="__('Herramientas digitales para estudiar')">
+<x-layouts.app :title="__('Redes de apoyo y servicios')">
 
     <main class="w-full px-6 py-10">
 
