@@ -17,6 +17,6 @@
 
     </main>
 
-    <x-section-rating sectionKey="vive-al-maximo" />
+    <x-section-rating sectionKey="opciones-y-proceso-de-grado" />
      @include('partials.footer')
 </x-layouts.app>

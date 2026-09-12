@@ -17,6 +17,6 @@
 
     </main>
 
-    <x-section-rating sectionKey="vive-al-maximo" />
+    <x-section-rating sectionKey="investigacion-y-trabajos-academicos" />
      @include('partials.footer')
 </x-layouts.app>

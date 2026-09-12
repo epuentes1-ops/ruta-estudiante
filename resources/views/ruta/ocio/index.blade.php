@@ -1,4 +1,4 @@
-<x-layouts.app :title="__('Vive al máximo tu espacio virtual')">
+<x-layouts.app :title="__('Ocio')">
 
     <div class="flex flex-col items-center w-full gap-10 p-6">
 
@@ -142,6 +142,6 @@
 
     </div>
 
-    <x-section-rating sectionKey="vive-al-maximo" />
+    <x-section-rating sectionKey="ocio" />
      @include('partials.footer')
 </x-layouts.app>

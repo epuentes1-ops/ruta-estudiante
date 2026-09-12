@@ -17,6 +17,6 @@
 
     </main>
 
-    <x-section-rating sectionKey="vive-al-maximo" />
+    <x-section-rating sectionKey="redes-de-apoyo-y-servicios" />
      @include('partials.footer')
 </x-layouts.app>

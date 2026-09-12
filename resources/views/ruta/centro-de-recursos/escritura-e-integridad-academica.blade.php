@@ -17,6 +17,6 @@
 
     </main>
 
-    <x-section-rating sectionKey="vive-al-maximo" />
+    <x-section-rating sectionKey="escritura-e-integridad-academica" />
      @include('partials.footer')
 </x-layouts.app>
