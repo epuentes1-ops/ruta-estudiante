@@ -5,13 +5,19 @@
         <div x-data="{
             activeSlide: 0,
             slides: ['/images/banners/bannerHome.png']
-        }" x-init="setInterval(() => activeSlide = (activeSlide + 1) % slides.length, 4000)"
-            class="relative w-full max-w-6xl aspect-[16/6] sm:aspect-[16/7] md:aspect-[16/5] lg:aspect-[16/4] overflow-hidden rounded-2xl shadow-xl">
+        }" x-init="if (slides.length > 1) {
+            setInterval(() => {
+                activeSlide = (activeSlide + 1) % slides.length
+            }, 4000)
+        }"
+            class="relative w-full max-w-6xl mx-auto overflow-hidden rounded-2xl shadow-xl">
+
             <template x-for="(slide, index) in slides" :key="index">
-                <img :src="slide" alt="Banner"
-                    class="absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-700 ease-in-out"
-                    :class="{ 'opacity-100': activeSlide === index, 'opacity-0': activeSlide !== index }">
+                <img x-show="activeSlide === index" :src="slide" alt="Banner"
+                    class="block w-full h-auto object-contain
+                   transition-opacity duration-700 ease-in-out">
             </template>
+
         </div>
 
         <!-- Textos centrados y responsivos -->
