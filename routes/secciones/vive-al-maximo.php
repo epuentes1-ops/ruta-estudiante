@@ -12,7 +12,7 @@ Route::middleware(['auth', 'verified'])
             ->name('index');
 
         // Subsecciones
-        Route::view(
+        Route::view( 
             '/comienza-tu-experiencia-virtual',
             'ruta.vive-al-maximo.comienza-tu-experiencia-virtual'
         )->name('comienza-tu-experiencia-virtual');

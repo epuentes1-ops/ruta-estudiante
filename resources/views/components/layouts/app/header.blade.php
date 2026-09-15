@@ -18,20 +18,17 @@
         */
 
         [
-            'label' => 'Vive al máximo tu espacio virtual',
+            'label' => 'Vive tu campus',
             'prefix' => 'vive-al-maximo',
 
             'items' => [
+                
                 [
-                    'label' => 'Inicio de la sección',
-                    'route' => 'vive-al-maximo.index',
-                ],
-                [
-                    'label' => 'Comienza tu experiencia virtual',
+                    'label' => 'Empieza tu experiencia virtual',
                     'route' => 'vive-al-maximo.comienza-tu-experiencia-virtual',
                 ],
                 [
-                    'label' => 'Herramientas digitales para estudiar',
+                    'label' => 'Herramientas para estudiar',
                     'route' => 'vive-al-maximo.herramientas-digitales-para-estudiar',
                 ],
                 [
@@ -39,15 +36,15 @@
                     'route' => 'vive-al-maximo.organiza-tu-aprendizaje',
                 ],
                 [
-                    'label' => 'Participa y comunícate',
+                    'label' => 'Participa y conéctate',
                     'route' => 'vive-al-maximo.participa-y-comunicate',
                 ],
                 [
-                    'label' => 'Evaluación y progreso',
+                    'label' => 'Sigue tu progreso',
                     'route' => 'vive-al-maximo.evaluacion-y-progreso',
                 ],
                 [
-                    'label' => 'Acompañamiento y servicio',
+                    'label' => 'Ayuda y servicio',
                     'route' => 'vive-al-maximo.acompanamiento-y-servicio',
                 ],
             ],
@@ -60,20 +57,17 @@
         */
 
         [
-            'label' => 'Mis trámites académicos',
+            'label' => 'Resuelve tus trámites',
             'prefix' => 'tramites-academicos',
 
             'items' => [
-                [
-                    'label' => 'Inicio de la sección',
-                    'route' => 'tramites-academicos.index',
-                ],
+                
                 [
                     'label' => 'Matrícula, cursos y pagos',
                     'route' => 'tramites-academicos.matricula-cursos-y-pagos',
                 ],
                 [
-                    'label' => 'Novedades académicas',
+                    'label' => 'Cambios en tu proceso',
                     'route' => 'tramites-academicos.novedades-academicas',
                 ],
                 [
@@ -81,7 +75,7 @@
                     'route' => 'tramites-academicos.certificados-y-resultados',
                 ],
                 [
-                    'label' => 'Opciones y proceso de grado',
+                    'label' => 'Tu proceso de grado',
                     'route' => 'tramites-academicos.opciones-y-proceso-de-grado',
                 ],
                 
@@ -95,16 +89,13 @@
         */
 
         [
-            'label' => 'La U te acompaña',
+            'label' => 'Cuídate y conéctate',
             'prefix' => 'la-u-te-acompana',
 
             'items' => [
+                
                 [
-                    'label' => 'Inicio de la sección',
-                    'route' => 'la-u-te-acompana.index',
-                ],
-                [
-                    'label' => 'Bienestar físico y hábitos saludables',
+                    'label' => 'Cuída tu cuerpo',
                     'route' => 'la-u-te-acompana.bienestar-fisico-y-habitos-saludables',
                 ],
                 [
@@ -112,15 +103,15 @@
                     'route' => 'la-u-te-acompana.estudio-familia-y-cuidado',
                 ],
                 [
-                    'label' => 'Bienestar emocional y convivencia',
+                    'label' => 'Protege tu bienestar',
                     'route' => 'la-u-te-acompana.bienestar-emocional-y-convivencia',
                 ],
                 [
-                    'label' => 'Redes de apoyo y servicios',
+                    'label' => 'Encuentra tu red de apoyo',
                     'route' => 'la-u-te-acompana.redes-de-apoyo-y-servicios',
                 ],
                 [
-                    'label' => 'Vida universitaria y comunidad',
+                    'label' => 'Vive la vida universitaria',
                     'route' => 'la-u-te-acompana.vida-universitaria-y-comunidad',
                 ],
                 
@@ -134,28 +125,25 @@
         */
 
         [
-            'label' => 'Centro de recursos',
+            'label' => 'Encuentra y crea',
             'prefix' => 'centro-de-recursos',
 
             'items' => [
+                
                 [
-                    'label' => 'Inicio de la sección',
-                    'route' => 'centro-de-recursos.index',
-                ],
-                [
-                    'label' => 'Acceso y orientación',
+                    'label' => 'Encuentra orientación',
                     'route' => 'centro-de-recursos.acceso-y-orientacion',
                 ],
                 [
-                    'label' => 'Recursos de información',
+                    'label' => 'Busca lo que necesitas',
                     'route' => 'centro-de-recursos.recursos-de-informacion',
                 ],
                 [
-                    'label' => 'Escritura e integridad académica',
+                    'label' => 'Escribe y cita mejor',
                     'route' => 'centro-de-recursos.escritura-e-integridad-academica',
                 ],
                 [
-                    'label' => 'Investigación y trabajos académicos',
+                    'label' => 'Investiga y crea',
                     'route' => 'centro-de-recursos.investigacion-y-trabajos-academicos',
                 ],
                 
@@ -168,17 +156,18 @@
         |--------------------------------------------------------------------------
         */
 
-        [
-            'label' => 'Ocio',
-            'prefix' => 'ocio',
+        // [
+        //     'label' => 'Entretenimiento',
+        //     'prefix' => 'ocio',
+            
 
-            'items' => [
-                [
-                    'label' => 'Inicio de la sección',
-                    'route' => 'ocio.index',
-                ],
-            ],
-        ],
+        //     'items' => [
+        //         [
+        //             'label' => 'Inicio de la sección',
+        //             'route' => 'ocio.index',
+        //         ],
+        //     ],
+        // ],
     ];
 @endphp
 
