@@ -86,10 +86,10 @@ Route::get('/section-rating', [SectionRatingController::class, 'show'])
 |--------------------------------------------------------------------------
 */
 
-require __DIR__ . '/secciones/vive-al-maximo.php';
-require __DIR__ . '/secciones/tramites-academicos.php';
-require __DIR__ . '/secciones/la-u-te-acompana.php';
-require __DIR__ . '/secciones/centro-de-recursos.php';
+require __DIR__ . '/secciones/vive-tu-experiencia.php';
+require __DIR__ . '/secciones/tus-tramites.php';
+require __DIR__ . '/secciones/cuidate-y-conectate.php';
+require __DIR__ . '/secciones/investiga-y-crea.php';
 require __DIR__ . '/secciones/ocio.php';
 
 

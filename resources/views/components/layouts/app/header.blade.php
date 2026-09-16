@@ -18,34 +18,33 @@
         */
 
         [
-            'label' => 'Vive tu campus',
-            'prefix' => 'vive-al-maximo',
+            'label' => 'Vive tu experiencia',
+            'prefix' => 'vive-tu-experiencia',
 
             'items' => [
-                
                 [
                     'label' => 'Empieza tu experiencia virtual',
-                    'route' => 'vive-al-maximo.comienza-tu-experiencia-virtual',
+                    'route' => 'vive-tu-experiencia.comienza-tu-experiencia-virtual',
                 ],
                 [
                     'label' => 'Herramientas para estudiar',
-                    'route' => 'vive-al-maximo.herramientas-digitales-para-estudiar',
+                    'route' => 'vive-tu-experiencia.herramientas-digitales-para-estudiar',
                 ],
                 [
                     'label' => 'Organiza tu aprendizaje',
-                    'route' => 'vive-al-maximo.organiza-tu-aprendizaje',
+                    'route' => 'vive-tu-experiencia.organiza-tu-aprendizaje',
                 ],
                 [
                     'label' => 'Participa y conéctate',
-                    'route' => 'vive-al-maximo.participa-y-comunicate',
+                    'route' => 'vive-tu-experiencia.participa-y-comunicate',
                 ],
                 [
                     'label' => 'Sigue tu progreso',
-                    'route' => 'vive-al-maximo.evaluacion-y-progreso',
+                    'route' => 'vive-tu-experiencia.evaluacion-y-progreso',
                 ],
                 [
                     'label' => 'Ayuda y servicio',
-                    'route' => 'vive-al-maximo.acompanamiento-y-servicio',
+                    'route' => 'vive-tu-experiencia.acompanamiento-y-servicio',
                 ],
             ],
         ],
@@ -57,28 +56,26 @@
         */
 
         [
-            'label' => 'Resuelve tus trámites',
-            'prefix' => 'tramites-academicos',
+            'label' => 'Tus trámites',
+            'prefix' => 'tus-tramites',
 
             'items' => [
-                
                 [
                     'label' => 'Matrícula, cursos y pagos',
-                    'route' => 'tramites-academicos.matricula-cursos-y-pagos',
+                    'route' => 'tus-tramites.matricula-cursos-y-pagos',
                 ],
                 [
                     'label' => 'Cambios en tu proceso',
-                    'route' => 'tramites-academicos.novedades-academicas',
+                    'route' => 'tus-tramites.novedades-academicas',
                 ],
                 [
                     'label' => 'Certificados y resultados',
-                    'route' => 'tramites-academicos.certificados-y-resultados',
+                    'route' => 'tus-tramites.certificados-y-resultados',
                 ],
                 [
                     'label' => 'Tu proceso de grado',
-                    'route' => 'tramites-academicos.opciones-y-proceso-de-grado',
+                    'route' => 'tus-tramites.opciones-y-proceso-de-grado',
                 ],
-                
             ],
         ],
 
@@ -90,31 +87,29 @@
 
         [
             'label' => 'Cuídate y conéctate',
-            'prefix' => 'la-u-te-acompana',
+            'prefix' => 'cuidate-y-conectate',
 
             'items' => [
-                
                 [
                     'label' => 'Cuída tu cuerpo',
-                    'route' => 'la-u-te-acompana.bienestar-fisico-y-habitos-saludables',
+                    'route' => 'cuidate-y-conectate.bienestar-fisico-y-habitos-saludables',
                 ],
                 [
                     'label' => 'Estudio, familia y cuidado',
-                    'route' => 'la-u-te-acompana.estudio-familia-y-cuidado',
+                    'route' => 'cuidate-y-conectate.estudio-familia-y-cuidado',
                 ],
                 [
                     'label' => 'Protege tu bienestar',
-                    'route' => 'la-u-te-acompana.bienestar-emocional-y-convivencia',
+                    'route' => 'cuidate-y-conectate.bienestar-emocional-y-convivencia',
                 ],
                 [
                     'label' => 'Encuentra tu red de apoyo',
-                    'route' => 'la-u-te-acompana.redes-de-apoyo-y-servicios',
+                    'route' => 'cuidate-y-conectate.redes-de-apoyo-y-servicios',
                 ],
                 [
                     'label' => 'Vive la vida universitaria',
-                    'route' => 'la-u-te-acompana.vida-universitaria-y-comunidad',
+                    'route' => 'cuidate-y-conectate.vida-universitaria-y-comunidad',
                 ],
-                
             ],
         ],
 
@@ -125,28 +120,26 @@
         */
 
         [
-            'label' => 'Encuentra y crea',
-            'prefix' => 'centro-de-recursos',
+            'label' => 'Investiga y crea',
+            'prefix' => 'investiga-y-crea',
 
             'items' => [
-                
                 [
                     'label' => 'Encuentra orientación',
-                    'route' => 'centro-de-recursos.acceso-y-orientacion',
+                    'route' => 'investiga-y-crea.acceso-y-orientacion',
                 ],
                 [
                     'label' => 'Busca lo que necesitas',
-                    'route' => 'centro-de-recursos.recursos-de-informacion',
+                    'route' => 'investiga-y-crea.recursos-de-informacion',
                 ],
                 [
                     'label' => 'Escribe y cita mejor',
-                    'route' => 'centro-de-recursos.escritura-e-integridad-academica',
+                    'route' => 'investiga-y-crea.escritura-e-integridad-academica',
                 ],
                 [
                     'label' => 'Investiga y crea',
-                    'route' => 'centro-de-recursos.investigacion-y-trabajos-academicos',
+                    'route' => 'investiga-y-crea.investigacion-y-trabajos-academicos',
                 ],
-                
             ],
         ],
 
@@ -159,7 +152,6 @@
         // [
         //     'label' => 'Entretenimiento',
         //     'prefix' => 'ocio',
-            
 
         //     'items' => [
         //         [
@@ -288,8 +280,13 @@
                     {{-- ACCESOS EXTERNOS --}}
                     {{-- ================================================= --}}
 
-                    <flux:menu.item icon="folder" href="https://repositoriocrai.ucompensar.edu.co/" target="_blank"
-                        rel="noopener noreferrer">
+                    <flux:menu.item icon="building-office" href="https://campusvirtual.ucompensar.edu.co/"
+                        target="_blank" rel="noopener noreferrer">
+                        Campus Virtual
+                    </flux:menu.item>
+
+                    <flux:menu.item icon="folder-git-2" href="https://repositoriocrai.ucompensar.edu.co/"
+                        target="_blank" rel="noopener noreferrer">
                         Repositorio CRAI
                     </flux:menu.item>
 
@@ -299,6 +296,7 @@
                         Solución E-Learning
                     </flux:menu.item>
 
+                    
                 </flux:menu>
 
             </flux:dropdown>
@@ -343,7 +341,7 @@
                {{ request()->routeIs('inicio')
                    ? 'border-violet-600 text-violet-700 dark:border-violet-400 dark:text-violet-300'
                    : 'border-transparent text-zinc-600 hover:border-violet-300 hover:text-violet-700
-                                                                     dark:text-zinc-300 dark:hover:border-violet-700 dark:hover:text-violet-300' }}">
+                                                                                                   dark:text-zinc-300 dark:hover:border-violet-700 dark:hover:text-violet-300' }}">
 
                 <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
                     class="size-5 shrink-0">
@@ -387,7 +385,7 @@
                        {{ $isSectionActive
                            ? 'border-violet-600 text-violet-700 dark:border-violet-400 dark:text-violet-300'
                            : 'border-transparent text-zinc-600 hover:border-violet-300 hover:text-violet-700
-                                                                             dark:text-zinc-300 dark:hover:border-violet-700 dark:hover:text-violet-300' }}">
+                                                                                                                           dark:text-zinc-300 dark:hover:border-violet-700 dark:hover:text-violet-300' }}">
 
                         {{ $section['label'] }}
 
@@ -439,6 +437,15 @@
             {{-- Enlaces externos --}}
             <flux:navbar class="me-1.5 space-x-0.5 rtl:space-x-reverse py-0!">
 
+                <flux:tooltip :content="__('Campus Virtual')" position="bottom">
+
+                    <flux:navbar.item class="h-10 max-lg:hidden [&>div>svg]:size-5" icon="building-office"
+                        href="https://campusvirtual.ucompensar.edu.co/" target="_blank" rel="noopener noreferrer"
+                        :label="__('Campus Virtual')" />
+
+                </flux:tooltip>
+
+
                 <flux:tooltip :content="__('Repositorio CRAI')" position="bottom">
 
                     <flux:navbar.item class="h-10 max-lg:hidden [&>div>svg]:size-5" icon="folder-git-2"
@@ -455,6 +462,10 @@
                         :label="__('Solución E-Learning')" />
 
                 </flux:tooltip>
+
+                <flux:button x-data x-on:click="$flux.dark = ! $flux.dark" icon="moon" variant="subtle"
+                        aria-label="Toggle dark mode" />
+
 
             </flux:navbar>
 
