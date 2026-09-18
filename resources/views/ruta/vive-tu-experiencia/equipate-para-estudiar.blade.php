@@ -51,7 +51,7 @@
         <div class="w-full text-left mt-8">
             <h3
                 class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-gray-900 dark:text-white leading-relaxed text-left">
-                Configura tu correo y conoce Microsoft 365
+                Descubre cómo sacarle juego a Onedrive
             </h3>
         </div>
 
@@ -61,7 +61,8 @@
 
             <div class="w-full md:w-2/3 rounded-xl overflow-hidden shadow-lg">
                 <div class="aspect-video">
-                    <iframe title="genially-2" src="https://view.genially.com/690288b15151ac3654f965fa"
+                    <iframe title="OneDrive"
+                        src="https://player.vimeo.com/video/996267166?badge=0&autopause=0&player_id=0&app_id=58479%22"
                         class="w-full h-full" frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
                         allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                         allowfullscreen>
@@ -72,17 +73,14 @@
             <!-- Texto -->
             <div class="w-full md:w-1/3 text-center md:text-left">
                 <p class="text-sm sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
-                    Cada semestre es un nuevo viaje, y tú eres quien guía el camino.
-                    A veces hay tramos fáciles, otros con curvas, y momentos donde toca parar a tomar aire…
-                    Pero en cada paso hay algo valioso: aprender, acompañar y transformar.
+                    Tener todo en un solo lugar te puede ahorrar más de un dolor de cabeza.<br> <br>
+                    Con OneDrive puedes guardar y organizar tus archivos para tenerlos siempre a la mano y encontrarlos
+                    cuando los necesites. En este video te mostramos cómo crear carpetas, subir archivos, compartirlos
+                    con tus compañeros y dar permisos para trabajar en equipo.<br> <br>
+                    Organiza tu info, compártela fácil y ten todo bajo control.
                 </p>
             </div>
         </div>
-
-
-
-
-
 
 
     </main>
