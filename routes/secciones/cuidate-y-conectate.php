@@ -13,28 +13,28 @@ Route::middleware(['auth', 'verified'])
 
         // Subsecciones
         Route::view(
-            '/bienestar-fisico-y-habitos-saludables',
-            'ruta.cuidate-y-conectate.bienestar-fisico-y-habitos-saludables'
-        )->name('bienestar-fisico-y-habitos-saludables');
+            '/mantente-activo-y-saludable',
+            'ruta.cuidate-y-conectate.mantente-activo-y-saludable'
+        )->name('mantente-activo-y-saludable');
 
         Route::view(
-            '/estudio-familia-y-cuidado',
-            'ruta.cuidate-y-conectate.estudio-familia-y-cuidado'
-        )->name('estudio-familia-y-cuidado');
+            '/equilibra-estudio-y-vida',
+            'ruta.cuidate-y-conectate.equilibra-estudio-y-vida'
+        )->name('equilibra-estudio-y-vida');
 
         Route::view(
-            '/bienestar-emocional-y-convivencia',
-            'ruta.cuidate-y-conectate.bienestar-emocional-y-convivencia'
-        )->name('bienestar-emocional-y-convivencia');
+            '/fortalece-tu-bienestar',
+            'ruta.cuidate-y-conectate.fortalece-tu-bienestar'
+        )->name('fortalece-tu-bienestar');
 
         Route::view(
-            '/redes-de-apoyo-y-servicios',
-            'ruta.cuidate-y-conectate.redes-de-apoyo-y-servicios'
-        )->name('redes-de-apoyo-y-servicios');
+            '/activa-tu-red-de-apoyo',
+            'ruta.cuidate-y-conectate.activa-tu-red-de-apoyo'
+        )->name('activa-tu-red-de-apoyo');
 
         Route::view(
-            '/vida-universitaria-y-comunidad',
-            'ruta.cuidate-y-conectate.vida-universitaria-y-comunidad'
-        )->name('vida-universitaria-y-comunidad');
+            '/vive-ucompensar',
+            'ruta.cuidate-y-conectate.vive-ucompensar'
+        )->name('vive-ucompensar');
 
     });

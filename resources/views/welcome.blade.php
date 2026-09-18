@@ -63,8 +63,8 @@
                 <div class="w-100" style="max-width: 300px;">
                     @if (Route::has('login'))
                         @auth
-                            <a href="{{ url('/inicio') }}" class="btn btn-secondary mb-3 w-100">
-                                Inicio
+                            <a href="{{ url('/empieza-por-aqui') }}" class="btn btn-secondary mb-3 w-100">
+                                Empieza por aquí
                             </a>
                         @else
                             <a href="{{ route('login') }}" class="btn btn-secondary mb-3 w-100">

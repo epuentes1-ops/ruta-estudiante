@@ -13,14 +13,14 @@ Route::middleware(['auth', 'verified'])
 
         // Subsecciones
         Route::view( 
-            '/comienza-tu-experiencia-virtual',
-            'ruta.vive-tu-experiencia.comienza-tu-experiencia-virtual'
-        )->name('comienza-tu-experiencia-virtual');
+            '/activa-tu-experiencia',
+            'ruta.vive-tu-experiencia.activa-tu-experiencia'
+        )->name('activa-tu-experiencia');
 
         Route::view(
-            '/herramientas-digitales-para-estudiar',
-            'ruta.vive-tu-experiencia.herramientas-digitales-para-estudiar'
-        )->name('herramientas-digitales-para-estudiar');
+            '/equipate-para-estudiar',
+            'ruta.vive-tu-experiencia.equipate-para-estudiar'
+        )->name('equipate-para-estudiar');
 
         Route::view(
             '/organiza-tu-aprendizaje',
@@ -28,18 +28,18 @@ Route::middleware(['auth', 'verified'])
         )->name('organiza-tu-aprendizaje');
 
         Route::view(
-            '/participa-y-comunicate',
-            'ruta.vive-tu-experiencia.participa-y-comunicate'
-        )->name('participa-y-comunicate');
+            '/conecta-y-participa',
+            'ruta.vive-tu-experiencia.conecta-y-participa'
+        )->name('conecta-y-participa');
 
         Route::view(
-            '/evaluacion-y-progreso',
-            'ruta.vive-tu-experiencia.evaluacion-y-progreso'
-        )->name('evaluacion-y-progreso');
+            '/revisa-como-vas',
+            'ruta.vive-tu-experiencia.revisa-como-vas'
+        )->name('revisa-como-vas');
 
         Route::view(
-            '/acompanamiento-y-servicio',
-            'ruta.vive-tu-experiencia.acompanamiento-y-servicio'
-        )->name('acompanamiento-y-servicio');
+            '/resuelve-dudas-y-apoyo',
+            'ruta.vive-tu-experiencia.resuelve-dudas-y-apoyo'
+        )->name('resuelve-dudas-y-apoyo');
 
     });

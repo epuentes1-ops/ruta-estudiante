@@ -1,11 +1,11 @@
-<x-layouts.app :title="__('Encuentra lo que buscas')">
+<x-layouts.app :title="__('Resuelve dudas y apoyo')">
 
     <main class="w-full px-6 py-10">
 
         <!-- Banner principal -->
         <div x-data="{
             activeSlide: 0,
-            slides: ['/images/banners/vive/seccion1.png']
+            slides: ['/images/banners/vive/seccion1_6.png']
         }" x-init="setInterval(() => activeSlide = (activeSlide + 1) % slides.length, 4000)"
             class="relative w-full max-w-6xl aspect-[16/6] sm:aspect-[16/7] md:aspect-[16/5] lg:aspect-[16/4] overflow-hidden rounded-2xl shadow-xl">
             <template x-for="(slide, index) in slides" :key="index">
@@ -15,8 +15,21 @@
             </template>
         </div>
 
+        <div class="mx-auto max-w-7xl">
+
+            <h1 class="text-3xl font-bold text-gray-900 dark:text-white">
+                Vive al máximo tu espacio virtual
+            </h1>
+
+            <p class="mt-3 text-gray-600 dark:text-gray-300">
+                Encuentra herramientas y recursos para aprovechar al máximo
+                tu experiencia académica y virtual.
+            </p>
+
+        </div>
+
     </main>
 
-    <x-section-rating sectionKey="encuentra-lo-que-buscas" />
+    <x-section-rating sectionKey="resuelve-dudas-y-apoyo" />
      @include('partials.footer')
 </x-layouts.app>

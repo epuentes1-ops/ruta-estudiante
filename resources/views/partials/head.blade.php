@@ -33,7 +33,7 @@
 </style>
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BMTBKZVM1Q"></script>
+{{-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-BMTBKZVM1Q"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -42,12 +42,12 @@
     }
     gtag('js', new Date());
     gtag('config', 'G-BMTBKZVM1Q');
-</script>
+</script> --}}
 
 
 
 <!-- Clarity Tag Manager -->
-<script type="text/javascript">
+{{-- <script type="text/javascript">
     (function(c, l, a, r, i, t, y) {
         c[a] = c[a] || function() {
             (c[a].q = c[a].q || []).push(arguments)
@@ -58,7 +58,13 @@
         y = l.getElementsByTagName(r)[0];
         y.parentNode.insertBefore(t, y);
     })(window, document, "clarity", "script", "v5hwjt2rnr");
-</script>
+</script> --}}
+
+<!-- Chatbot Tag Manager -->
+<elevenlabs-convai agent-id="agent_6601m00gjdk8f1es742a9hkxq115"></elevenlabs-convai>
+<script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+
+
 
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 @fluxAppearance

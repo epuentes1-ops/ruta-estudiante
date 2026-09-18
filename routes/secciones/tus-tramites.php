@@ -13,22 +13,22 @@ Route::middleware(['auth', 'verified'])
 
         // Subsecciones
         Route::view(
-            '/matricula-cursos-y-pagos',
-            'ruta.tus-tramites.matricula-cursos-y-pagos'
-        )->name('matricula-cursos-y-pagos');
+            '/gestiona-matricula-y-pagos',
+            'ruta.tus-tramites.gestiona-matricula-y-pagos'
+        )->name('gestiona-matricula-y-pagos');
 
         Route::view(
-            '/novedades-academicas',
-            'ruta.tus-tramites.novedades-academicas'
-        )->name('novedades-academicas');
+            '/gestiona-novedades-academicas',
+            'ruta.tus-tramites.gestiona-novedades-academicas'
+        )->name('gestiona-novedades-academicas');
 
         Route::view(
-            '/certificados-y-resultados',
-            'ruta.tus-tramites.certificados-y-resultados'
-        )->name('certificados-y-resultados');
+            '/consulta-resultados-y-certificados',
+            'ruta.tus-tramites.consulta-resultados-y-certificados'
+        )->name('consulta-resultados-y-certificados');
 
         Route::view(
-            '/opciones-y-proceso-de-grado',
-            'ruta.tus-tramites.opciones-y-proceso-de-grado'
-        )->name('opciones-y-proceso-de-grado');
+            '/preparate-para-tu-grado',
+            'ruta.tus-tramites.preparate-para-tu-grado'
+        )->name('preparate-para-tu-grado');
     });

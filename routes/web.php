@@ -32,9 +32,9 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
-Route::view('inicio', 'inicio')
+Route::view('empieza-por-aqui', 'empieza-por-aqui')
     ->middleware(['auth', 'verified'])
-    ->name('inicio');
+    ->name('empieza-por-aqui');
 
 Route::view('tucaminodocente', 'tucaminodocente')
     ->middleware(['auth', 'verified'])

@@ -1,8 +1,7 @@
-<x-layouts.app :title="__('Encuentra lo que buscas')">
+<x-layouts.app :title="__('Gestiona matrícula y pagos')">
 
     <main class="w-full px-6 py-10">
-
-        <!-- Banner principal -->
+    <!-- Banner principal -->
         <div x-data="{
             activeSlide: 0,
             slides: ['/images/banners/vive/seccion1.png']
@@ -17,6 +16,6 @@
 
     </main>
 
-    <x-section-rating sectionKey="encuentra-lo-que-buscas" />
+    <x-section-rating sectionKey="gestiona-matricula-y-pagos" />
      @include('partials.footer')
 </x-layouts.app>

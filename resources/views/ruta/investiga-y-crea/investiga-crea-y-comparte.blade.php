@@ -1,4 +1,4 @@
-<x-layouts.app :title="__('Encuentra lo que buscas')">
+<x-layouts.app :title="__('Investiga, crea y comparte')">
 
     <main class="w-full px-6 py-10">
 
@@ -17,6 +17,6 @@
 
     </main>
 
-    <x-section-rating sectionKey="encuentra-lo-que-buscas" />
+    <x-section-rating sectionKey="investiga-crea-y-comparte" />
      @include('partials.footer')
 </x-layouts.app>

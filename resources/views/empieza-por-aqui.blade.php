@@ -1,4 +1,4 @@
-<x-layouts.app :title="__('Ruta del estudiante - Inicio')" :description="__('Bienvenido a la Ruta del Estudiante')">
+<x-layouts.app :title="__('Ruta del estudiante - Empieza por aquí')" :description="__('Bienvenido a la Ruta del Estudiante')">
     <div class="flex flex-col items-center w-full gap-8 p-6">
 
         <!-- Sección del banner -->
@@ -46,7 +46,7 @@
         </div>
 
     </div>
-    <x-section-rating sectionKey="inicio" />
+    <x-section-rating sectionKey="empieza-por-aqui" />
 
     @include('partials.footer')
 

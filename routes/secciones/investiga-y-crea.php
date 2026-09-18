@@ -13,23 +13,23 @@ Route::middleware(['auth', 'verified'])
 
         // Subsecciones
         Route::view(
-            '/acceso-y-orientacion',
-            'ruta.investiga-y-crea.acceso-y-orientacion'
-        )->name('acceso-y-orientacion');
+            '/encuentra-guia-y-orientacion',
+            'ruta.investiga-y-crea.encuentra-guia-y-orientacion'
+        )->name('encuentra-guia-y-orientacion');
 
         Route::view(
-            '/recursos-de-informacion',
-            'ruta.investiga-y-crea.recursos-de-informacion'
-        )->name('recursos-de-informacion');
+            '/encuentra-lo-que-buscas',
+            'ruta.investiga-y-crea.encuentra-lo-que-buscas'
+        )->name('encuentra-lo-que-buscas');
 
         Route::view(
-            '/escritura-e-integridad-academica',
-            'ruta.investiga-y-crea.escritura-e-integridad-academica'
-        )->name('escritura-e-integridad-academica');
+            '/escribe-y-cita-con-confianza',
+            'ruta.investiga-y-crea.escribe-y-cita-con-confianza'
+        )->name('escribe-y-cita-con-confianza');
 
         Route::view(
-            '/investigacion-y-trabajos-academicos',
-            'ruta.investiga-y-crea.investigacion-y-trabajos-academicos'
-        )->name('investigacion-y-trabajos-academicos');
+            '/investiga-crea-y-comparte',
+            'ruta.investiga-y-crea.investiga-crea-y-comparte'
+        )->name('investiga-crea-y-comparte');
 
     });

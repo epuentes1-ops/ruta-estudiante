@@ -23,28 +23,28 @@
 
             'items' => [
                 [
-                    'label' => 'Empieza tu experiencia virtual',
-                    'route' => 'vive-tu-experiencia.comienza-tu-experiencia-virtual',
+                    'label' => 'Activa tu experiencia',
+                    'route' => 'vive-tu-experiencia.activa-tu-experiencia',
                 ],
                 [
-                    'label' => 'Herramientas para estudiar',
-                    'route' => 'vive-tu-experiencia.herramientas-digitales-para-estudiar',
+                    'label' => 'Equípate para estudiar',
+                    'route' => 'vive-tu-experiencia.equipate-para-estudiar',
                 ],
                 [
                     'label' => 'Organiza tu aprendizaje',
                     'route' => 'vive-tu-experiencia.organiza-tu-aprendizaje',
                 ],
                 [
-                    'label' => 'Participa y conéctate',
-                    'route' => 'vive-tu-experiencia.participa-y-comunicate',
+                    'label' => 'Conecta y participa',
+                    'route' => 'vive-tu-experiencia.conecta-y-participa',
                 ],
                 [
-                    'label' => 'Sigue tu progreso',
-                    'route' => 'vive-tu-experiencia.evaluacion-y-progreso',
+                    'label' => 'Revisa cómo vas',
+                    'route' => 'vive-tu-experiencia.revisa-como-vas',
                 ],
                 [
-                    'label' => 'Ayuda y servicio',
-                    'route' => 'vive-tu-experiencia.acompanamiento-y-servicio',
+                    'label' => 'Resuelve dudas y apoyo',
+                    'route' => 'vive-tu-experiencia.resuelve-dudas-y-apoyo',
                 ],
             ],
         ],
@@ -61,20 +61,20 @@
 
             'items' => [
                 [
-                    'label' => 'Matrícula, cursos y pagos',
-                    'route' => 'tus-tramites.matricula-cursos-y-pagos',
+                    'label' => 'Gestiona matrícula y pagos',
+                    'route' => 'tus-tramites.gestiona-matricula-y-pagos',
                 ],
                 [
-                    'label' => 'Cambios en tu proceso',
-                    'route' => 'tus-tramites.novedades-academicas',
+                    'label' => 'Gestiona novedades académicas',
+                    'route' => 'tus-tramites.gestiona-novedades-academicas',
                 ],
                 [
-                    'label' => 'Certificados y resultados',
-                    'route' => 'tus-tramites.certificados-y-resultados',
+                    'label' => 'Consulta resultados y certificados',
+                    'route' => 'tus-tramites.consulta-resultados-y-certificados',
                 ],
                 [
-                    'label' => 'Tu proceso de grado',
-                    'route' => 'tus-tramites.opciones-y-proceso-de-grado',
+                    'label' => 'Prepárate para tu grado',
+                    'route' => 'tus-tramites.preparate-para-tu-grado',
                 ],
             ],
         ],
@@ -91,24 +91,24 @@
 
             'items' => [
                 [
-                    'label' => 'Cuída tu cuerpo',
-                    'route' => 'cuidate-y-conectate.bienestar-fisico-y-habitos-saludables',
+                    'label' => 'Mantente activo y saludable',
+                    'route' => 'cuidate-y-conectate.mantente-activo-y-saludable',
                 ],
                 [
-                    'label' => 'Estudio, familia y cuidado',
-                    'route' => 'cuidate-y-conectate.estudio-familia-y-cuidado',
+                    'label' => 'Equilibra estudio y vida',
+                    'route' => 'cuidate-y-conectate.equilibra-estudio-y-vida',
                 ],
                 [
-                    'label' => 'Protege tu bienestar',
-                    'route' => 'cuidate-y-conectate.bienestar-emocional-y-convivencia',
+                    'label' => 'Fortalece tu bienestar',
+                    'route' => 'cuidate-y-conectate.fortalece-tu-bienestar',
                 ],
                 [
-                    'label' => 'Encuentra tu red de apoyo',
-                    'route' => 'cuidate-y-conectate.redes-de-apoyo-y-servicios',
+                    'label' => 'Activa tu red de apoyo',
+                    'route' => 'cuidate-y-conectate.activa-tu-red-de-apoyo',
                 ],
                 [
-                    'label' => 'Vive la vida universitaria',
-                    'route' => 'cuidate-y-conectate.vida-universitaria-y-comunidad',
+                    'label' => 'Vive UCompensar',
+                    'route' => 'cuidate-y-conectate.vive-ucompensar',
                 ],
             ],
         ],
@@ -125,20 +125,20 @@
 
             'items' => [
                 [
-                    'label' => 'Encuentra orientación',
-                    'route' => 'investiga-y-crea.acceso-y-orientacion',
+                    'label' => 'Encuentra guía y orientación',
+                    'route' => 'investiga-y-crea.encuentra-guia-y-orientacion',
                 ],
                 [
-                    'label' => 'Busca lo que necesitas',
-                    'route' => 'investiga-y-crea.recursos-de-informacion',
+                    'label' => 'Encuentra lo que buscas',
+                    'route' => 'investiga-y-crea.encuentra-lo-que-buscas',
                 ],
                 [
-                    'label' => 'Escribe y cita mejor',
-                    'route' => 'investiga-y-crea.escritura-e-integridad-academica',
+                    'label' => 'Escribe y cita con confianza',
+                    'route' => 'investiga-y-crea.escribe-y-cita-con-confianza',
                 ],
                 [
-                    'label' => 'Investiga y crea',
-                    'route' => 'investiga-y-crea.investigacion-y-trabajos-academicos',
+                    'label' => 'Investiga, crea y comparte',
+                    'route' => 'investiga-y-crea.investiga-crea-y-comparte',
                 ],
             ],
         ],
@@ -228,8 +228,8 @@
                 <flux:menu class="w-80 max-w-[calc(100vw-2rem)]">
 
                     {{-- Inicio --}}
-                    <flux:menu.item icon="layout-grid" :href="route('inicio')" wire:navigate>
-                        Inicio
+                    <flux:menu.item icon="layout-grid" :href="route('empieza-por-aqui')" wire:navigate>
+                        Empieza por aquí
                     </flux:menu.item>
 
 
@@ -307,11 +307,11 @@
         {{-- LOGO --}}
         {{-- ========================================================= --}}
 
-        <a href="{{ route('inicio') }}" wire:navigate
+        <a href="{{ route('empieza-por-aqui') }}" wire:navigate
             class="inline-flex min-h-11 shrink-0 items-center rounded-xl
                    focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500
                    focus-visible:ring-offset-2 dark:focus-visible:ring-offset-zinc-950"
-            aria-label="Ruta del estudiante, ir al inicio">
+            aria-label="Ruta del estudiante, ir a Empieza por aquí">
 
             <img src="{{ asset('images/logos_1/LogoRutaE.png') }}" alt="Ruta del estudiante"
                 class="h-auto max-h-[64px] w-auto max-w-[168px] object-contain sm:max-w-[190px]">
@@ -328,7 +328,7 @@
             {{-- INICIO --}}
             {{-- ===================================================== --}}
 
-            <a href="{{ route('inicio') }}" wire:navigate @if (request()->routeIs('inicio')) aria-current="page" @endif
+            <a href="{{ route('empieza-por-aqui') }}" wire:navigate @if (request()->routeIs('empieza-por-aqui')) aria-current="page" @endif
                 class="relative inline-flex h-full items-center gap-2
                border-b-[3px] px-3 text-xs font-semibold transition
                2xl:px-4 2xl:text-sm
@@ -338,7 +338,7 @@
                focus-visible:ring-inset
                focus-visible:ring-cyan-500
 
-               {{ request()->routeIs('inicio')
+               {{ request()->routeIs('empieza-por-aqui')
                    ? 'border-violet-600 text-violet-700 dark:border-violet-400 dark:text-violet-300'
                    : 'border-transparent text-zinc-600 hover:border-violet-300 hover:text-violet-700
                                                                                                    dark:text-zinc-300 dark:hover:border-violet-700 dark:hover:text-violet-300' }}">
@@ -351,7 +351,7 @@
                     <rect x="15" y="15" width="5" height="5" rx="1" />
                 </svg>
 
-                Inicio
+                Empieza por aquí
 
             </a>
 

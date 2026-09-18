@@ -1,10 +1,10 @@
-<x-layouts.app :title="__('Ruta del estudiante - Tu camino docente')">
+<x-layouts.app :title="__('Ruta del estudiante - Activa tu experiencia')">
     <div class="flex flex-col items-center w-full gap-10 p-6">
 
         <!-- Banner principal -->
         <div x-data="{
             activeSlide: 0,
-            slides: ['/images/banners/campus/seccion1.png']
+            slides: ['/images/banners/vive/seccion1.png']
         }" x-init="setInterval(() => activeSlide = (activeSlide + 1) % slides.length, 4000)"
             class="relative w-full max-w-6xl aspect-[16/6] sm:aspect-[16/7] md:aspect-[16/5] lg:aspect-[16/4] overflow-hidden rounded-2xl shadow-xl">
             <template x-for="(slide, index) in slides" :key="index">
@@ -183,7 +183,7 @@
             <!-- Imagen -->
             <div class="w-full md:w-5/12 rounded-xl overflow-hidden">
 
-                <img src="/images/banners/campus/imgseccion1.png" alt="Consulta tus fechas claves"
+                <img src="/images/banners/vive/imgseccion1.png" alt="Consulta tus fechas claves"
                     class="w-full h-auto object-contain" id="modelImage" style="cursor: pointer;">
 
             </div>
@@ -233,7 +233,7 @@
 
     </div>
 
-    <x-section-rating sectionKey="tucaminodocente" />
+    <x-section-rating sectionKey="activa-tu-experiencia" />
 
     @include('partials.footer')
 </x-layouts.app>
