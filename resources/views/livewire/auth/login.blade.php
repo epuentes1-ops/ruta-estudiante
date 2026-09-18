@@ -62,7 +62,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
 
         AuthAuditService::log('login_success', request(), Auth::user(), Auth::user()?->email, true, null, ['method' => 'email_password'], 'local');
 
-        $this->redirectIntended(default: route('inicio', absolute: false), navigate: true);
+        $this->redirectIntended(default: route('empieza-por-aqui', absolute: false), navigate: true);
     }
 
     /**

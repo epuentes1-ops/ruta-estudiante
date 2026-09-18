@@ -1,9 +1,10 @@
 <x-layouts.app :title="__('Fortalece tu bienestar')">
 
+    <main class="w-full px-6 py-10">
     <!-- Banner principal -->
         <div x-data="{
             activeSlide: 0,
-            slides: ['/images/banners/vive/seccion1.png']
+            slides: ['/images/banners/conectate/seccion3_3.png']
         }" x-init="setInterval(() => activeSlide = (activeSlide + 1) % slides.length, 4000)"
             class="relative w-full max-w-6xl aspect-[16/6] sm:aspect-[16/7] md:aspect-[16/5] lg:aspect-[16/4] overflow-hidden rounded-2xl shadow-xl">
             <template x-for="(slide, index) in slides" :key="index">
