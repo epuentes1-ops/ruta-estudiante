@@ -24,15 +24,12 @@
         <div class="text-center max-w-4xl px-4">
             <h2
                 class="text-lg sm:text-xl md:text-xl lg:text-2xl font-semibold text-gray-800 dark:text-gray-100 leading-relaxed">
-                Enseñar no es solo compartir conocimiento, es encender curiosidad.
+                Tu vida universitaria tiene de todo: clases, trabajos, trámites, momentos de pausa, nuevas ideas y mil
+                cosas pasando al mismo tiempo. La Ruta del Estudiante reúne herramientas para acompañarte en cada una de
+                esas etapas. Entra, explora y encuentra lo que necesitas, justo cuando lo necesitas.
             </h2>
         </div>
-        <div class="text-center max-w-4xl px-4">
-            <p class="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 dark:text-gray-200 leading-relaxed">
-                EduTips nace para acompañarte en ese viaje: un espacio creado por y para docentes-tutores que inspiran
-                todos los días.
-            </p>
-        </div>
+        
 
         <!-- Video fuera del recuadro principal -->
         <div class="w-full max-w-5xl mt-6 rounded-xl overflow-hidden shadow-lg">

@@ -51,7 +51,7 @@
         <div class="w-full text-left mt-8">
             <h3
                 class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-gray-900 dark:text-white leading-relaxed text-left">
-                Descubre cómo sacarle juego a Onedrive
+                Descubre cómo sacarle juego a OneDrive
             </h3>
         </div>
 

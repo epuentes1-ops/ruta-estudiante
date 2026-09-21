@@ -120,11 +120,11 @@
                 <div x-show="activeTab === 'descubre'" x-transition>
                     <p class="mb-6 text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
                         ¿No sabes dónde hacer ese trámite que necesitas? ¿O dónde encontrar lo que te están
-                        pidiendo?<br>
+                        pidiendo?<br><br>
                         Tranqui. En tu Campus Virtual tienes varios de los servicios que vas a necesitar. Aquí te
                         mostramos cómo entrar, dónde buscar y cómo hacer tus solicitudes académicas o administrativas
-                        sin perderte en el intento.<br>
-                        Entra, ubícate y resuelve.<br>
+                        sin perderte en el intento.<br><br>
+                        Entra, ubícate y resuelve.<br><br>
                         ¡Así de fácil!
                     </p>
 
@@ -143,11 +143,11 @@
                 <!-- TAB 2: organizado -->
                 <div x-show="activeTab === 'organizado'" x-transition>
                     <p class="mb-6 text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
-                        ¿16 semanas? Tranqui, no tienes que aprendértelas de memoria.<br>
+                        ¿16 semanas? Tranqui, no tienes que aprendértelas de memoria.<br><br>
                         Piensa en tu semestre como una ruta: hay momentos para arrancar, avanzar, hacer paradas y llegar
                         a la meta. En este video te contamos qué pasa semana a semana, desde el ingreso de tus
-                        asignaturas hasta las evaluaciones, cortes, porcentajes y momentos clave.<br>
-                        Además, conocerás cómo te acompañamos durante el recorrido.<br>
+                        asignaturas hasta las evaluaciones, cortes, porcentajes y momentos clave.<br><br>
+                        Además, conocerás cómo te acompañamos durante el recorrido.<br><br>
                         Dale play y ubícate en la ruta de tu semestre.
                     </p>
 
@@ -166,14 +166,12 @@
         </div> <!-- fin x-data tabs -->
 
         <div class="w-full max-w-5xl mx-auto text-center mb-4">
-
             <h3
                 class="text-lg sm:text-xl md:text-2xl font-semibold 
                text-gray-800 dark:text-gray-100 
                leading-tight">
                 Consulta tus fechas claves y recordatorios
             </h3>
-
         </div>
 
 
@@ -197,13 +195,13 @@
                    text-gray-700 dark:text-gray-200 
                    leading-relaxed">
 
-                    ¿Otra vez se te pasó una fecha?<br>
+                    ¿Otra vez se te pasó una fecha?<br><br>
 
                     Entre entregas, evaluaciones, encuentros y trámites, es fácil que algo se nos escape.
                     Aquí encontrarás cómo consultar tus fechas importantes, revisar las actividades de tus cursos
                     y crear recordatorios para tener todo bajo control.
 
-                    <br>
+                    <br><br>
 
                     Menos “se me olvidó”. Más “ya lo tenía agendado”.
 

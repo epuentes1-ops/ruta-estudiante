@@ -142,6 +142,6 @@
 
     </div>
 
-    <x-section-rating sectionKey="vive-al-maximo" />
+    
      @include('partials.footer')
 </x-layouts.app>
