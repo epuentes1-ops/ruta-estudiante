@@ -276,114 +276,88 @@
 
             <div x-cloak x-show="modalImagen" x-transition.opacity.duration.200ms x-on:click.self="modalImagen = false"
                 class="
-            fixed
-            inset-0
-            z-[9999]
-
-            flex
-            items-center
-            justify-center
-
-            bg-black/75
-            backdrop-blur-sm
-
-            p-4
-            sm:p-6
-            md:p-8
-        "
-                role="dialog" aria-modal="true" aria-label="Imagen ampliada de percepción docente">
-
-                {{-- ================================================
-            CONTENEDOR DE LA IMAGEN
-        ================================================= --}}
-
-                <div
-                    class="
-                relative
-                w-auto
-                max-w-[95vw]
-                max-h-[92vh]
-            ">
-
-                    {{-- ============================================
-                BOTÓN DE CIERRE
-            ============================================= --}}
-
-                    <button type="button" x-on:click="modalImagen = false"
-                        class="
-                    absolute
-                    z-20
-
-                    -top-4
-                    -right-4
-
+                    fixed
+                    inset-0
+                    z-[9999]
                     flex
                     items-center
                     justify-center
-
-                    w-11
-                    h-11
-                    md:w-12
-                    md:h-12
-
-                    rounded-full
-
-                    bg-white
-                    dark:bg-gray-900
-
-                    border
-                    border-gray-200
-                    dark:border-gray-700
-
-                    text-purple-700
-                    dark:text-purple-400
-
-                    shadow-xl
-
-                    transition-all
-                    duration-200
-
-                    scale-110
-
-                    focus:outline-none
-                    focus:ring-4
-                    focus:ring-purple-300
+                    bg-black/75
+                    backdrop-blur-sm
+                    p-4
+                    sm:p-6
+                    md:p-8
                 "
+                style="overflow: auto;" role="dialog" aria-modal="true"
+                aria-label="Imagen ampliada de percepción docente">
+
+                <div class="relative"
+                    style="
+                        width: auto;
+                        max-width: 95vw;
+                        max-height: 92vh;
+                    ">
+
+                    {{-- Botón cerrar --}}
+                    <button type="button" x-on:click="modalImagen = false"
+                        class="
+                            absolute
+                            z-20
+                            -top-3
+                            -right-3
+                            flex
+                            items-center
+                            justify-center
+                            w-11
+                            h-11
+                            md:w-12
+                            md:h-12
+                            rounded-full
+                            bg-white
+                            dark:bg-gray-900
+                            border
+                            border-gray-200
+                            dark:border-gray-700
+                            text-purple-700
+                            dark:text-purple-400
+                            shadow-xl
+                            transition-all
+                            duration-200
+                            hover:scale-105
+                            focus:outline-none
+                            focus:ring-4
+                            focus:ring-purple-300
+                        "
                         aria-label="Cerrar imagen ampliada">
 
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2.5" class="w-6 h-6" aria-hidden="true">
+
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+
                         </svg>
 
                     </button>
 
-
-                    {{-- ============================================
-                IMAGEN AMPLIADA
-            ============================================= --}}
-
+                    {{-- Imagen ampliada --}}
                     <img src="/images/banners/vive/percepcion_docente.png"
                         alt="Información ampliada sobre la evaluación docente"
                         class="
-                    block
-                    max-w-[95vw]
-                    max-h-[88vh]
-                    w-auto
-                    h-auto
-
-                    object-contain
-
-                    rounded-2xl
-
-                    {{-- bg-purple-700 --}}
-
-                    shadow-2xl
-                "
+                            block
+                            rounded-2xl
+                            shadow-2xl
+                        "
+                        style="
+                            display: block;
+                            width: auto;
+                            height: auto;
+                            max-width: 95vw;
+                            max-height: 88vh;
+                            object-fit: contain;
+                        "
                         x-on:click.stop>
 
                 </div>
-
             </div>
 
         </div>
