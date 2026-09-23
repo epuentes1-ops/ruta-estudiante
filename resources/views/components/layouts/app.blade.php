@@ -10,7 +10,16 @@
         flux:main. El atributo container centra el contenido sin crear una
         columna lateral ni depender de sidebar.blade.php.
     --}}
-    <flux:main container id="main-content" tabindex="-1" class="w-full min-w-0">
+    {{-- <flux:main container id="main-content" tabindex="-1" class="w-full min-w-0">
         {{ $slot }}
+    </flux:main> --}}
+
+    <flux:main
+        id="main-content"
+        tabindex="-1"
+        class="w-full max-w-none min-w-0 px-4 sm:px-5 lg:px-6">
+
+        {{ $slot }}
+
     </flux:main>
 </x-layouts.app.header>

@@ -185,9 +185,10 @@
     {{-- HEADER PRINCIPAL --}}
     {{-- ============================================================= --}}
 
-    <flux:header sticky container
-        class="!min-h-[92px] border-b border-zinc-200 bg-white/95 shadow-sm backdrop-blur
-               dark:border-zinc-800 dark:bg-zinc-950/95">
+    <flux:header sticky
+        class="!min-h-[92px] w-full px-4 sm:px-5 lg:px-6
+           border-b border-zinc-200 bg-white/95 shadow-sm backdrop-blur
+           dark:border-zinc-800 dark:bg-zinc-950/95">
 
         {{-- ========================================================= --}}
         {{-- MENÚ MÓVIL / TABLET --}}
