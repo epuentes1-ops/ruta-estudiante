@@ -1,6 +1,6 @@
 <x-layouts.app :title="__('Equilibra estudio y vida')">
 
-    <main class="w-full px-6 py-10">
+    <div class="flex flex-col items-center w-full gap-8 p-6">
 
         <!-- Banner principal -->
         <div x-data="{
@@ -15,7 +15,7 @@
             </template>
         </div>
 
-    </main>
+    </div>
 
     <x-section-rating sectionKey="equilibra-estudio-y-vida" />
      @include('partials.footer')

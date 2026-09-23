@@ -1,6 +1,6 @@
 <x-layouts.app :title="__('Vive al máximo tu espacio virtual')">
 
-    <main class="w-full px-6 py-10">
+    <div class="flex flex-col items-center w-full gap-10 p-6">
         <div class="mx-auto max-w-7xl">
 
             {{-- Encabezado --}}
@@ -126,7 +126,7 @@
 
             </div>
         </div>
-    </main>
+    </div>
 
     @include('partials.footer')
 </x-layouts.app>

@@ -1,6 +1,6 @@
 <x-layouts.app :title="__('Encuentra guía y orientación')">
 
-    <main class="w-full px-6 py-10">
+    <div class="flex flex-col items-center w-full gap-8 p-6">
 
         <!-- Banner principal -->
         <div x-data="{
@@ -15,7 +15,7 @@
             </template>
         </div>
 
-    </main>
+    </div>
 
     <x-section-rating sectionKey="encuentra-guia-y-orientacion" />
      @include('partials.footer')

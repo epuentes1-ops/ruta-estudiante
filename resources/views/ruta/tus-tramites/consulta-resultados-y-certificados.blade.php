@@ -1,6 +1,6 @@
 <x-layouts.app :title="__('Consulta resultados y certificados')">
 
-    <main class="w-full px-6 py-10">
+    <div class="flex flex-col items-center w-full gap-8 p-6">
     <!-- Banner principal -->
         <div x-data="{
             activeSlide: 0,
@@ -13,7 +13,7 @@
                     :class="{ 'opacity-100': activeSlide === index, 'opacity-0': activeSlide !== index }">
             </template>
         </div>
-    </main>
+    </div>
 
     <x-section-rating sectionKey="consulta-resultados-y-certificados" />
      @include('partials.footer')

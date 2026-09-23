@@ -35,7 +35,7 @@
         <div class="w-full max-w-5xl mt-6 rounded-xl overflow-hidden shadow-lg">
             <div class="aspect-video">
                 <iframe title="vimeo-player"
-                    src="https://player.vimeo.com/video/1133839487?h=b76c6c8bee&badge=0&autopause=0&player_id=0&app_id=58479"
+                    src="https://player.vimeo.com/video/1229528041?badge=0&autopause=0&player_id=0&app_id=58479%22"
                     class="w-full h-full" frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
                     allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                     allowfullscreen></iframe>
