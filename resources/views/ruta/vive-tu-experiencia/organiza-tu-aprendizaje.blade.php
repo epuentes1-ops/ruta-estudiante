@@ -1,6 +1,7 @@
 <x-layouts.app :title="__('Organiza tu aprendizaje')">
 
-    <main class="w-full px-6 py-10">
+    <div class="flex flex-col items-center w-full gap-10 p-6">
+
 
         <!-- Banner principal -->
         <div x-data="{
@@ -140,7 +141,7 @@
 
 
 
-    </main>
+    </div>
 
     <x-section-rating sectionKey="organiza-tu-aprendizaje" />
     @include('partials.footer')

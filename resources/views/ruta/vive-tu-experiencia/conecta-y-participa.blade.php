@@ -1,6 +1,5 @@
 <x-layouts.app :title="__('Conecta y participa')">
-
-    <main class="w-full px-6 py-10">
+    <div class="flex flex-col items-center w-full gap-10 p-6">
 
         <!-- Banner principal -->
         <div x-data="{
@@ -430,7 +429,7 @@
         </section>
 
 
-    </main>
+    </div>
 
     <x-section-rating sectionKey="conecta-y-participa" />
     @include('partials.footer')

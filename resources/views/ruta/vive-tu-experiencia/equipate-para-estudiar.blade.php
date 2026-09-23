@@ -1,6 +1,5 @@
 <x-layouts.app :title="__('Equípate para estudiar')">
-
-    <main class="w-full px-6 py-10">
+    <div class="flex flex-col items-center w-full gap-10 p-6">
 
         <!-- Banner principal -->
         <div x-data="{
@@ -15,7 +14,7 @@
             </template>
         </div>
 
-        <div class="w-full text-left mt-8">
+        <div class="text-left mt-8 flex flex-col items-center w-full gap-10 p-6">
             <h3
                 class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-gray-900 dark:text-white leading-relaxed text-left">
                 Configura tu correo y conoce Microsoft 365
@@ -48,7 +47,7 @@
             </div>
         </div>
 
-        <div class="w-full text-left mt-8">
+        <div class="text-left mt-8 flex flex-col items-center w-full gap-10 p-6">
             <h3
                 class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-gray-900 dark:text-white leading-relaxed text-left">
                 Descubre cómo sacarle juego a OneDrive
@@ -83,7 +82,7 @@
         </div>
 
 
-    </main>
+    </div>
 
     <x-section-rating sectionKey="equipate-para-estudiar" />
     @include('partials.footer')

@@ -1,6 +1,6 @@
 <x-layouts.app :title="__('Resuelve dudas y apoyo')">
 
-    <main class="w-full px-6 py-10">
+    <div class="flex flex-col items-center w-full gap-10 p-6">
 
         <!-- Banner principal -->
         <div x-data="{
@@ -270,7 +270,7 @@
 
         </div>
 
-    </main>
+    </div>
 
     <x-section-rating sectionKey="resuelve-dudas-y-apoyo" />
     @include('partials.footer')
