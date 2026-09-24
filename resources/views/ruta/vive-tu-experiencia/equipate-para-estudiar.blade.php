@@ -29,16 +29,29 @@
                     ¿Tu correo institucional es solo para recibir correos? Spoiler: no.<br> <br>
 
                     Tienes todo un espacio virtual para estudiar, organizarte, guardar tus archivos, trabajar en equipo
-                    y sobrevivir a esos trabajos grupales que aparecen de la nada.<br> <br>
-
+                    y sobrevivir a esos trabajos grupales que aparecen de la nada.
                     Descubre todo lo que tienes a tu alcance con Microsoft 365 y empieza a sacarle jugo a tu cuenta.
                 </p>
+                <br> <br>
+                <div class="flex flex-col sm:flex-row gap-4">
+
+                    <flux:button href="https://unipanamericanaeduco.sharepoint.com/Portal%20MiPana/SitePages/INICIOPORTAL.aspx?OR=EXCEL-WEB.BODY.NT&CT=1790271038636"
+                        target="_blank" rel="noopener noreferrer" icon="window" variant="filled"
+                        class="!bg-[#7C3AED] !text-white
+               hover:!bg-[#362651]
+               dark:!bg-[#7C3AED] dark:!text-white
+               dark:hover:!bg-[#b49bec]  dark:hover:!text-gray-900
+               transition-all duration-300">
+                        Ir a mi Microsoft 365
+                    </flux:button>
+                </div>
             </div>
 
             <!-- Genially -->
             <div class="w-full md:w-2/3 rounded-xl overflow-hidden shadow-lg">
                 <div class="aspect-video">
-                    <iframe title="video-correo" src="https://player.vimeo.com/video/1229528893?badge=0&autopause=0&player_id=0&app_id=58479%22"
+                    <iframe title="video-correo"
+                        src="https://player.vimeo.com/video/1229528893?badge=0&autopause=0&player_id=0&app_id=58479%22"
                         class="w-full h-full" frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
                         allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                         allowfullscreen>

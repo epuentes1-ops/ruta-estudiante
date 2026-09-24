@@ -71,7 +71,8 @@
                 <!-- TAB 1: organiza -->
                 <div x-show="activeTab === 'organiza'" x-transition>
                     <p class="mb-6 text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
-                        ¿Cómo haces para que en el mismo día quepan UCompensar, el trabajo, la familia y también tú?<br><br>
+                        ¿Cómo haces para que en el mismo día quepan UCompensar, el trabajo, la familia y también
+                        tú?<br><br>
                         Estudiar virtual te da libertad, pero también significa que nadie va a venir a decirte: “oye, ya
                         es hora de estudiar”. 😅<br><br>
                         En este video encontrarás formas sencillas de organizar tu semana, aprovechar mejor tus tiempos
@@ -79,17 +80,34 @@
                         No necesitas más horas. Necesitas encontrarles su lugar.
                     </p>
 
+
                     <div class="w-full rounded-xl overflow-hidden shadow-md">
                         <div class="aspect-video">
                             <iframe title="video-tiempo-estudiar"
-                                src="https://player.vimeo.com/video/999307435?badge=0&autopause=0&player_id=0&app_id=58479%22"
+                                src="https://player.vimeo.com/video/1229531224?badge=0&autopause=0player_id=0&app_id=58479%22"
                                 class="w-full h-full" frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
                                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                                 allowfullscreen>
                             </iframe>
                         </div>
                     </div>
+                    <br>
+                    <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
+
+                        <flux:button href="https://campusvirtual.ucompensar.edu.co" target="_blank"
+                            rel="noopener noreferrer" icon="building-office" variant="filled"
+                            class="!bg-[#7C3AED] !text-white
+                                hover:!bg-[#362651]
+                                dark:!bg-[#7C3AED] dark:!text-white
+                                dark:hover:!bg-[#b49bec]  dark:hover:!text-gray-900
+                                transition-all duration-300">
+                            Ir a mi Campus Virtual
+                        </flux:button>
+                    </div>
+
                 </div>
+
+
 
                 <!-- TAB 2: preparate -->
                 <div x-show="activeTab === 'preparate'" x-transition>
@@ -102,9 +120,8 @@
 
                     <div class="w-full rounded-xl overflow-hidden shadow-md">
                         <div class="aspect-video">
-                            <iframe title="Genially-encuentros"
-                                src="https://view.genially.com/66abd2b93cf39a7254c6775c" class="w-full h-full"
-                                frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
+                            <iframe title="Genially-encuentros" src="https://view.genially.com/66abd2b93cf39a7254c6775c"
+                                class="w-full h-full" frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
                                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                                 allowfullscreen>
                             </iframe>
@@ -126,7 +143,7 @@
                     <div class="w-full rounded-xl overflow-hidden shadow-md">
                         <div class="aspect-video">
                             <iframe title="video-consulta-encuentros"
-                                src="https://player.vimeo.com/video/770059844?badge=0&autopause=0&player_id=0&app_id=58479"
+                                src="https://player.vimeo.com/video/1229532834?badge=0&autopause=0&player_id=0&app_id=58479%22"
                                 class="w-full h-full" frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
                                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                                 allowfullscreen>

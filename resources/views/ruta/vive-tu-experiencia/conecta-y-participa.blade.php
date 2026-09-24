@@ -32,7 +32,7 @@
                         'En este video te mostramos dónde encontrarlos y cómo escribirles desde la Solución E-Learning.',
                     ],
                     'cierre' => 'Pregunta, conversa y encuentra el canal que necesitas.',
-                    'genially' => 'https://view.genially.com/690288b15151ac3654f965fa',
+                    'genially' => 'https://player.vimeo.com/video/1229535385?badge=0&autopause=0&player_id=0&app_id=58479%22',
                 ],
 
                 [
@@ -183,7 +183,7 @@
                                             items-center
                                             justify-center
                                             rounded-full
-                                            bg-orange-500
+                                            !bg-[#7C3AED]
                                             text-xs
                                             font-bold
                                             text-white
@@ -403,7 +403,7 @@
                         duration-300
                     "
                             :class="actual === {{ $index }} ?
-                                'w-8 bg-orange-500' :
+                                'w-8 !bg-[#7C3AED]' :
                                 'w-2 bg-gray-300 dark:bg-gray-600'"
                             aria-label="Ir al recurso {{ $index + 1 }}"></button>
                     @endforeach

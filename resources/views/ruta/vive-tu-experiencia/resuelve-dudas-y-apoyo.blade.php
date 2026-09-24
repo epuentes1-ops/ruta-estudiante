@@ -19,21 +19,31 @@
         <div x-data="{ openSection: 'canal' }" class="w-full max-w-6xl mx-auto mt-8 px-4 space-y-6">
 
             <!-- Ítem 1: Encuentra el canal de atención que necesitas -->
-            <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
-                <button class="w-full flex justify-between items-center px-4 py-3 text-left focus:outline-none"
+            <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden shadow-sm">
+                <button
+                    class="w-full flex justify-between items-center px-4 py-3 text-left
+                    focus:outline-none transition-all duration-300"
+                    :class="openSection === 'canal'
+                        ?
+                        'bg-[#7C3AED] text-white dark:bg-[#7C3AED] dark:text-white hover:!bg-[#362651]' :
+                        'bg-gray-50 text-gray-700 hover:!bg-[#ede9fe] dark:bg-gray-800 dark:text-gray-200 dark:hover:!bg-[#b49bec] dark:hover:!text-gray-900'"
                     @click="openSection = openSection === 'canal' ? null : 'canal'">
+
                     <h4
-                        class="text-base sm:text-lg md:text-xl lg:text-xl font-semibold text-gray-800 dark:text-gray-100">
+                        class="text-base sm:text-lg md:text-xl lg:text-xl
+                        font-semibold text-inherit">
                         Encuentra el canal de atención que necesitas
                     </h4>
-                    <span x-text="openSection === 'canal' ? '-' : '+'"
-                        class="text-xl font-bold text-gray-700 dark:text-gray-200"></span>
+
+                    <span x-text="openSection === 'canal' ? '−' : '+'" class="text-xl font-bold text-inherit">
+                    </span>
+
                 </button>
 
                 <div x-show="openSection === 'canal'" x-collapse class="border-t border-gray-200 dark:border-gray-700">
                     <div class="flex flex-col md:flex-row items-center justify-center gap-6 mt-6 px-4 pb-6">
                         <!-- Texto -->
-                        <div class="w-full md:w-1/3 text-center md:text-left">
+                        <div class="w-full md:w-2/3 text-center md:text-left">
                             <p
                                 class="text-sm sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
                                 <strong>¿Tienes una duda y no sabes a quién preguntarle? </strong><br><br>
@@ -45,17 +55,30 @@
                                 cada situación.<br><br>
                                 Ubica tu caso, encuentra el canal y sigue tu ruta.
                             </p>
-                        </div>
-                        <!-- Genially -->
-                        <div class="w-full md:w-2/3 rounded-xl overflow-hidden shadow-lg">
-                            <div class="aspect-video">
-                                <iframe title="genially-seguimiento"
-                                    src="https://view.genially.com/6909723df5c74b07c13f0944" class="w-full h-full"
-                                    frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
-                                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                                    allowfullscreen>
-                                </iframe>
+
+                            <br>
+
+                            <div class="flex flex-col sm:flex-row gap-4">
+
+                                <flux:button
+                                    href="https://bancodecontenidos.ucompensar.edu.co/index.php/s/PfHRMbSdp3zRdtn/preview"
+                                    target="_blank" rel="noopener noreferrer" icon="document-arrow-down"
+                                    variant="filled"
+                                    class="!bg-[#7C3AED] !text-white
+                                        hover:!bg-[#362651]
+                                        dark:!bg-[#7C3AED] dark:!text-white
+                                        dark:hover:!bg-[#b49bec]  dark:hover:!text-gray-900
+                                        transition-all duration-300">
+                                    Ver Infografía
+                                </flux:button>
                             </div>
+                        </div>
+                        <!-- Imagen -->
+                        <div class="w-full md:w-5/12 rounded-xl overflow-hidden">
+
+                            <img src="/images/banners/vive/imgseccion1_1.png" alt="Consulta tus fechas claves"
+                                class="w-full h-auto object-contain" id="modelImage" style="cursor: pointer;">
+
                         </div>
                     </div>
                 </div>
@@ -63,10 +86,17 @@
 
             <!-- Ítem 2:Reporta un problema técnico o de acceso -->
             <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
-                <button class="w-full flex justify-between items-center px-4 py-3 text-left focus:outline-none"
+                <button
+                    class="w-full flex justify-between items-center px-4 py-3 text-left
+           focus:outline-none transition-all duration-300"
+                    :class="openSection === 'problema'
+                        ?
+                        'bg-[#7C3AED] text-white dark:bg-[#7C3AED] dark:text-white hover:!bg-[#362651]' :
+                        'bg-gray-50 text-gray-700 hover:!bg-[#ede9fe] dark:bg-gray-800 dark:text-gray-200 dark:hover:!bg-[#b49bec] dark:hover:!text-gray-900'"
                     @click="openSection = openSection === 'problema' ? null : 'problema'">
                     <h4
-                        class="text-base sm:text-lg md:text-xl lg:text-xl font-semibold text-gray-800 dark:text-gray-100">
+                        class="text-base sm:text-lg md:text-xl lg:text-xl
+                        font-semibold text-inherit">
                         Reporta un problema técnico o de acceso
                     </h4>
                     <span x-text="openSection === 'problema' ? '-' : '+'"
@@ -76,11 +106,11 @@
                 <div x-show="openSection === 'problema'" x-collapse
                     class="border-t border-gray-200 dark:border-gray-700">
                     <div class="flex flex-col md:flex-row items-center justify-center gap-6 mt-6 px-4 pb-6">
-                        <!-- Genially -->
+                        <!-- Video -->
                         <div class="w-full md:w-2/3 rounded-xl overflow-hidden shadow-lg">
                             <div class="aspect-video">
-                                <iframe title="genially-problema"
-                                    src="https://player.vimeo.com/video/1133852219?h=6eef8cd54a" class="w-full h-full"
+                                <iframe title="video-CRM"
+                                    src="https://player.vimeo.com/video/1229537693?badge=0&autopause=0&player_id=0&app_id=58479%22" class="w-full h-full"
                                     frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
                                     allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                                     allowfullscreen>
@@ -100,6 +130,22 @@
                                 enviar para que soporte pueda entender qué pasó y ayudarte más rápido.<br><br>
                                 Un pantallazo del error puede ahorrar muchas vueltas.
                             </p>
+                            <br>
+
+                            <div class="flex flex-col sm:flex-row gap-4">
+
+                                <flux:button
+                                    href="https://ucompensar2.my.site.com/estudiantes"
+                                    target="_blank" rel="noopener noreferrer" icon="cursor-arrow-ripple"
+                                    variant="filled"
+                                    class="!bg-[#7C3AED] !text-white
+                                        hover:!bg-[#362651]
+                                        dark:!bg-[#7C3AED] dark:!text-white
+                                        dark:hover:!bg-[#b49bec]  dark:hover:!text-gray-900
+                                        transition-all duration-300">
+                                    Ir al CRM
+                                </flux:button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -107,10 +153,17 @@
 
             <!-- Ítem 3: Crea y consulta tus solicitudes en el CRM -->
             <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
-                <button class="w-full flex justify-between items-center px-4 py-3 text-left focus:outline-none"
+                <button
+                    class="w-full flex justify-between items-center px-4 py-3 text-left
+           focus:outline-none transition-all duration-300"
+                    :class="openSection === 'consulta'
+                        ?
+                        'bg-[#7C3AED] text-white dark:bg-[#7C3AED] dark:text-white hover:!bg-[#362651]' :
+                        'bg-gray-50 text-gray-700 hover:!bg-[#ede9fe] dark:bg-gray-800 dark:text-gray-200 dark:hover:!bg-[#b49bec] dark:hover:!text-gray-900'"
                     @click="openSection = openSection === 'consulta' ? null : 'consulta'">
                     <h4
-                        class="text-base sm:text-lg md:text-xl lg:text-xl font-semibold text-gray-800 dark:text-gray-100">
+                        class="text-base sm:text-lg md:text-xl lg:text-xl
+                        font-semibold text-inherit">
                         Crea y consulta tus solicitudes en el CRM
                     </h4>
                     <span x-text="openSection === 'consulta' ? '-' : '+'"
@@ -131,6 +184,22 @@
                                 solicitud para que llegue al lugar correcto.<br><br>
                                 Porque saber dónde pedir ayuda también hace parte de la ruta.
                             </p>
+                            <br>
+
+                            <div class="flex flex-col sm:flex-row gap-4">
+
+                                <flux:button
+                                    href="https://ucompensar2.my.site.com/estudiantes"
+                                    target="_blank" rel="noopener noreferrer" icon="cursor-arrow-ripple"
+                                    variant="filled"
+                                    class="!bg-[#7C3AED] !text-white
+                                        hover:!bg-[#362651]
+                                        dark:!bg-[#7C3AED] dark:!text-white
+                                        dark:hover:!bg-[#b49bec]  dark:hover:!text-gray-900
+                                        transition-all duration-300">
+                                    Ir al CRM
+                                </flux:button>
+                            </div>
                         </div>
                         <!-- video -->
                         <div class="w-full md:w-2/3 rounded-xl overflow-hidden shadow-lg">
@@ -150,10 +219,17 @@
 
             <!-- Ítem 4: Solicita tutoría, monitoría o asesoría académica -->
             <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
-                <button class="w-full flex justify-between items-center px-4 py-3 text-left focus:outline-none"
-                    @click="openSection = openSection === 'tutoria' ? null : 'tutoria'">
+                <button
+                    class="w-full flex justify-between items-center px-4 py-3 text-left
+           focus:outline-none transition-all duration-300"
+                    :class="openSection === 'tutoria'
+                        ?
+                        'bg-[#7C3AED] text-white dark:bg-[#7C3AED] dark:text-white hover:!bg-[#362651]' :
+                        'bg-gray-50 text-gray-700 hover:!bg-[#ede9fe] dark:bg-gray-800 dark:text-gray-200 dark:hover:!bg-[#b49bec] dark:hover:!text-gray-900'"
+                    @click="openSection = openSection === 'tutoeia' ? null : 'tutoria'">
                     <h4
-                        class="text-base sm:text-lg md:text-xl lg:text-xl font-semibold text-gray-800 dark:text-gray-100">
+                        class="text-base sm:text-lg md:text-xl lg:text-xl
+                        font-semibold text-inherit">
                         Solicita tutoría, monitoría o asesoría académica
                     </h4>
                     <span x-text="openSection === 'tutoria' ? '-' : '+'"
@@ -163,11 +239,11 @@
                 <div x-show="openSection === 'tutoria'" x-collapse
                     class="border-t border-gray-200 dark:border-gray-700">
                     <div class="flex flex-col md:flex-row items-center justify-center gap-6 mt-6 px-4 pb-6">
-                        <!-- Genially -->
+                        <!-- Video -->
                         <div class="w-full md:w-2/3 rounded-xl overflow-hidden shadow-lg">
                             <div class="aspect-video">
-                                <iframe title="genially-tutoria"
-                                    src="https://view.genially.com/66bb8c8990672ae837c00954" class="w-full h-full"
+                                <iframe title="video-permanencia"
+                                    src="https://player.vimeo.com/video/1229543276?badge=0&autopause=0&player_id=0&app_id=58479%22" class="w-full h-full"
                                     frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
                                     allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                                     allowfullscreen>
@@ -184,6 +260,22 @@
                                 Aquí te mostramos cómo pedir una tutoría y encontrar el apoyo que necesitas para seguir
                                 avanzando.
                             </p>
+                            <br>
+
+                            <div class="flex flex-col sm:flex-row gap-4">
+
+                                <flux:button
+                                    href="https://alertastempranas.ucompensar.edu.co/app/login_page.php"
+                                    target="_blank" rel="noopener noreferrer" icon="user-group"
+                                    variant="filled"
+                                    class="!bg-[#7C3AED] !text-white
+                                        hover:!bg-[#362651]
+                                        dark:!bg-[#7C3AED] dark:!text-white
+                                        dark:hover:!bg-[#b49bec]  dark:hover:!text-gray-900
+                                        transition-all duration-300">
+                                    Solicitar Acompañamiento
+                                </flux:button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -191,10 +283,17 @@
 
             <!-- Ítem 5: ¿Qué hacer si tienes bajo rendimiento académico?-->
             <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
-                <button class="w-full flex justify-between items-center px-4 py-3 text-left focus:outline-none"
+                <button
+                    class="w-full flex justify-between items-center px-4 py-3 text-left
+           focus:outline-none transition-all duration-300"
+                    :class="openSection === 'bajo-rendimiento'
+                        ?
+                        'bg-[#7C3AED] text-white dark:bg-[#7C3AED] dark:text-white hover:!bg-[#362651]' :
+                        'bg-gray-50 text-gray-700 hover:!bg-[#ede9fe] dark:bg-gray-800 dark:text-gray-200 dark:hover:!bg-[#b49bec] dark:hover:!text-gray-900'"
                     @click="openSection = openSection === 'bajo-rendimiento' ? null : 'bajo-rendimiento'">
                     <h4
-                        class="text-base sm:text-lg md:text-xl lg:text-xl font-semibold text-gray-800 dark:text-gray-100">
+                        class="text-base sm:text-lg md:text-xl lg:text-xl
+                        font-semibold text-inherit">
                         ¿Qué hacer si tienes bajo rendimiento académico?
                     </h4>
                     <span x-text="openSection === 'bajo-rendimiento' ? '-' : '+'"
@@ -209,15 +308,32 @@
                             <p
                                 class="text-sm sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
                                 <strong>¿Tus notas no están saliendo como esperabas?</strong><br><br>
-                                Antes de dejar que se acumule todo, <strong>haz una pausa y pide acompañamiento</strong>.<br><br>
+                                Antes de dejar que se acumule todo, <strong>haz una pausa y pide
+                                    acompañamiento</strong>.<br><br>
                                 En este video te mostramos la ruta para levantar la mano y empezar a recuperar el ritmo.
                             </p>
+                            <br>
+
+                            <div class="flex flex-col sm:flex-row gap-4">
+
+                                <flux:button
+                                    href="https://alertastempranas.ucompensar.edu.co/app/login_page.php"
+                                    target="_blank" rel="noopener noreferrer" icon="hand-raised"
+                                    variant="filled"
+                                    class="!bg-[#7C3AED] !text-white
+                                        hover:!bg-[#362651]
+                                        dark:!bg-[#7C3AED] dark:!text-white
+                                        dark:hover:!bg-[#b49bec]  dark:hover:!text-gray-900
+                                        transition-all duration-300">
+                                    Tengo una dificultad académica
+                                </flux:button>
+                            </div>
                         </div>
                         <!-- video -->
                         <div class="w-full md:w-2/3 rounded-xl overflow-hidden shadow-lg">
                             <div class="aspect-video">
                                 <iframe title="video-crear-solicitudes-CRM"
-                                    src="https://player.vimeo.com/video/834164515?badge=0&autopause=0&player_id=0&app_id=58479%22"
+                                    src="https://player.vimeo.com/video/1229545319?badge=0&autopause=0&player_id=0&app_id=58479%22"
                                     class="w-full h-full" frameborder="0"
                                     referrerpolicy="strict-origin-when-cross-origin"
                                     allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
@@ -231,10 +347,17 @@
 
             <!-- Ítem 6: Solicita orientación vocacional -->
             <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
-                <button class="w-full flex justify-between items-center px-4 py-3 text-left focus:outline-none"
+                <button
+                    class="w-full flex justify-between items-center px-4 py-3 text-left
+           focus:outline-none transition-all duration-300"
+                    :class="openSection === 'orientacion-vocacional'
+                        ?
+                        'bg-[#7C3AED] text-white dark:bg-[#7C3AED] dark:text-white hover:!bg-[#362651]' :
+                        'bg-gray-50 text-gray-700 hover:!bg-[#ede9fe] dark:bg-gray-800 dark:text-gray-200 dark:hover:!bg-[#b49bec] dark:hover:!text-gray-900'"
                     @click="openSection = openSection === 'orientacion-vocacional' ? null : 'orientacion-vocacional'">
                     <h4
-                        class="text-base sm:text-lg md:text-xl lg:text-xl font-semibold text-gray-800 dark:text-gray-100">
+                        class="text-base sm:text-lg md:text-xl lg:text-xl
+                        font-semibold text-inherit">
                         Solicita orientación vocacional
                     </h4>
                     <span x-text="openSection === 'orientacion-vocacional' ? '-' : '+'"
@@ -244,25 +367,52 @@
                 <div x-show="openSection === 'orientacion-vocacional'" x-collapse
                     class="border-t border-gray-200 dark:border-gray-700">
                     <div class="flex flex-col md:flex-row items-center justify-center gap-6 mt-6 px-4 pb-6">
-                        <!-- Genially -->
-                        <div class="w-full md:w-2/3 rounded-xl overflow-hidden shadow-lg">
-                            <div class="aspect-video">
-                                <iframe title="genially-orientacion-vocacional"
-                                    src="https://view.genially.com/66bb8c8990672ae837c00954" class="w-full h-full"
-                                    frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
-                                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                                    allowfullscreen>
-                                </iframe>
-                            </div>
+                        <!-- Imagen -->
+                        <div class="w-full md:w-5/12 rounded-xl overflow-hidden">
+
+                            <img src="/images/banners/vive/imgseccion1_3.png" alt="Consulta tus fechas claves"
+                                class="w-full h-auto object-contain" id="modelImage" style="cursor: pointer;">
+
                         </div>
 
                         <!-- Texto -->
-                        <div class="w-full md:w-1/3 text-center md:text-left">
+                        <div class="w-full md:w-2/3 text-center md:text-left">
                             <p
                                 class="text-sm sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
-                                <strong>¿Tienes mil preguntas sobre tu futuro y cero respuestas claras? </strong><br><br>
-                                Tranqui, no tienes que tenerlo todo decidido. Aquí te mostramos cómo solicitar orientación vocacional y empezar a descubrir qué camino va más contigo.
+                                <strong>¿Tienes mil preguntas sobre tu futuro y cero respuestas claras?
+                                </strong><br><br>
+                                Tranqui, no tienes que tenerlo todo decidido. Aquí te mostramos cómo solicitar
+                                orientación vocacional y empezar a descubrir qué camino va más contigo.
                             </p>
+
+                            <br>
+
+                            <div class="flex flex-col sm:flex-row gap-4">
+
+                                <flux:button
+                                    href="https://bancodecontenidos.ucompensar.edu.co/index.php/s/mZ9q7TwYczSzB4p"
+                                    target="_blank" rel="noopener noreferrer" icon="document-arrow-down"
+                                    variant="filled"
+                                    class="!bg-[#7C3AED] !text-white
+                                        hover:!bg-[#362651]
+                                        dark:!bg-[#7C3AED] dark:!text-white
+                                        dark:hover:!bg-[#b49bec]  dark:hover:!text-gray-900
+                                        transition-all duration-300">
+                                    Ir al paso a paso
+                                </flux:button>
+
+                                <flux:button
+                                    href="https://alertastempranas.ucompensar.edu.co/app/login_page.php"
+                                    target="_blank" rel="noopener noreferrer" icon="chat-bubble-oval-left-ellipsis"
+                                    variant="filled"
+                                    class="!bg-[#7C3AED] !text-white
+                                        hover:!bg-[#362651]
+                                        dark:!bg-[#7C3AED] dark:!text-white
+                                        dark:hover:!bg-[#b49bec]  dark:hover:!text-gray-900
+                                        transition-all duration-300">
+                                    Quiero una orientación vocacional
+                                </flux:button>
+                            </div>
                         </div>
                     </div>
                 </div>

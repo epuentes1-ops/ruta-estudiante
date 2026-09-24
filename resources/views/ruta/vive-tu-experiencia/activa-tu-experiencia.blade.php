@@ -206,21 +206,28 @@
                     Menos “se me olvidó”. Más “ya lo tenía agendado”.
 
                 </p>
+<br><br>
 
+                <div class="flex flex-col sm:flex-row gap-4">
 
-                <div class="flex justify-center md:justify-start mt-4">
-
-                    <flux:button href="https://campusvirtual.ucompensar.edu.co" target="_blank"
-                        rel="noopener noreferrer" icon="document-arrow-up" variant="filled"
+                    <flux:button href="https://bancodecontenidos.ucompensar.edu.co/index.php/s/94MXyAf5gqT7eoQ" target="_blank"
+                        rel="noopener noreferrer" icon="document-arrow-down" variant="filled"
                         class="!bg-[#7C3AED] !text-white
-                       hover:!bg-[#362651]
-                       dark:!bg-[#7C3AED] dark:!text-white
-                       dark:hover:!bg-[#b49bec]
-                       dark:hover:!text-gray-900
-                       transition-all duration-300">
+               hover:!bg-[#362651]
+               dark:!bg-[#7C3AED] dark:!text-white
+               dark:hover:!bg-[#b49bec]  dark:hover:!text-gray-900
+               transition-all duration-300">
+                        Ir a mi Instructivo
+                    </flux:button>
 
-                        Haz clic aquí
-
+                    <flux:button href="https://unipanamericanaeduco.sharepoint.com/Portal%20MiPana/SitePages/Calendario%20Acad%C3%A9mico%202025.aspx?OR=Teams-HL&CT=1664573930488&xsdata=MDV8MDJ8fGQ3MTllMDAyZTkxNTQ3YjI2YTUwMDhkZjFhNjA1ZjIwfDRiZjM4ZWEyODMyZDQ1NTJiNTA4NDIxNTcwZGE0M2ZmfDB8MHw2MzkyNTg2NzMzMjUwNDIyNTZ8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKRFFTSTZJbFJsWVcxelgwRlVVRk5sY25acFkyVmZVMUJQVEU5R0lpd2lWaUk2SWpBdU1DNHdNREF3SWl3aVVDSTZJbGRwYmpNeUlpd2lRVTRpT2lKUGRHaGxjaUlzSWxkVUlqb3hNWDA9fDF8TDJOb1lYUnpMekU1T20xbFpYUnBibWRmVDBSUk1WcFVWWGxPZWtWMFdXcFpOVnBUTURCUFZHY3dURlJyTWxsNlZYUlBWRnByVFdwb2EwMUVWWHBhVkd4c1FIUm9jbVZoWkM1Mk1pOXRaWE56WVdkbGN5OHhOemt3TWpjd05UTXhNVEkxfDA4YTY0MmJjMzNhNDQ2MzY2YTUwMDhkZjFhNjA1ZjIwfGU0ZGM4ZjhiNTFlNzQ5OGE5MWI1Mzk2MzljNTgzYWRj&sdata=Z1lsWWs0TGZrRWREMDd3dUJyY1luR0laZGQzcXNKc2RCcHFWRnMvQXNTVT0%3D&ovuser=4bf38ea2-832d-4552-b508-421570da43ff%2Cepuentes%40ucompensar.edu.co&amp%3BCT=1664573930488&amp%3Bclickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMjA5MDQwMDcxMiIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D&TeamsCID=4c8eb65d-7129-47ca-b6ee-f4f6e3da1ecd&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNjA5MDMxNTgxOCJ9&linkOpenTime=1790270591715" target="_blank" rel="noopener noreferrer"
+                        icon="calendar" variant="filled"
+                        class="!bg-[#7C3AED] !text-white
+               hover:!bg-[#362651]
+               dark:!bg-[#7C3AED] dark:!text-white
+               dark:hover:!bg-[#b49bec] dark:hover:!text-gray-900
+               transition-all duration-300">
+                        Ir a mi Calendario Académico
                     </flux:button>
 
                 </div>

@@ -15,60 +15,52 @@
         </div>
 
         <!-- ACORDEÓN-->
-        <div x-data="{ openSection: 'inscripcion' }" class="w-full max-w-6xl mx-auto mt-8 px-4 space-y-6">
+        <div x-data="{ openSection: 'canal' }" class="w-full max-w-6xl mx-auto mt-8 px-4 space-y-6">
 
-            <!-- Ítem 1: Ruta de matrícula, inscripción y pago -->
-            <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
-                <button class="w-full flex justify-between items-center px-4 py-3 text-left focus:outline-none"
-                    @click="openSection = openSection === 'inscripcion' ? null : 'inscripcion'">
+            <!-- Ítem 1: Encuentra el canal de atención que necesitas -->
+            <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden shadow-sm">
+                <button
+                    class="w-full flex justify-between items-center px-4 py-3 text-left
+                    focus:outline-none transition-all duration-300"
+                    :class="openSection === 'canal'
+                        ?
+                        'bg-[#7C3AED] text-white dark:bg-[#7C3AED] dark:text-white hover:!bg-[#362651]' :
+                        'bg-gray-50 text-gray-700 hover:!bg-[#ede9fe] dark:bg-gray-800 dark:text-gray-200 dark:hover:!bg-[#b49bec] dark:hover:!text-gray-900'"
+                    @click="openSection = openSection === 'canal' ? null : 'canal'">
+
                     <h4
-                        class="text-base sm:text-lg md:text-xl lg:text-xl font-semibold text-gray-800 dark:text-gray-100">
-                        Ruta de matrícula, inscripción y pago
+                        class="text-base sm:text-lg md:text-xl lg:text-xl
+                        font-semibold text-inherit">
+                        Encuentra el canal de atención que necesitas
                     </h4>
-                    <span x-text="openSection === 'inscripcion' ? '-' : '+'"
-                        class="text-xl font-bold text-gray-700 dark:text-gray-200"></span>
+
+                    <span x-text="openSection === 'canal' ? '−' : '+'" class="text-xl font-bold text-inherit">
+                    </span>
+
                 </button>
 
-                <div x-show="openSection === 'inscripcion'" x-collapse
-                    class="border-t border-gray-200 dark:border-gray-700">
+                <div x-show="openSection === 'canal'" x-collapse class="border-t border-gray-200 dark:border-gray-700">
                     <div class="flex flex-col md:flex-row items-center justify-center gap-6 mt-6 px-4 pb-6">
                         <!-- Texto -->
                         <div class="w-full md:w-1/3 text-center md:text-left">
                             <p
                                 class="text-sm sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
-                                ¿Llegó el momento de matricularte y estás como: bueno… ¿y ahora qué hago?<br><br>
-                                Tranqui. Antes de que el semestre arranque, hay varios pasos que debes tener claros:
-                                cuándo matricularte, cómo inscribir tus cursos y cómo hacer el pago.<br><br>
-                                Aquí tienes la ruta completa para que sepas qué va primero, qué sigue y en qué momento
-                                darle clic a cada cosa.<br><br>
-                                Organízalo con tiempo y empieza el semestre sin correr.
+                                <strong>¿Tienes una duda y no sabes a quién preguntarle? </strong><br><br>
+                                Tranqui, no tienes que ir preguntando de chat en chat hasta encontrar a la persona
+                                indicada. En UCompensar tienes diferentes canales según lo que necesites: desde una duda
+                                sobre una nota o una materia, hasta problemas para entrar a una plataforma o situaciones
+                                relacionadas con tu proceso académico.<br><br>
+                                Aquí encontrarás la ruta más fácil para saber a quién acudir y dónde pedir ayuda, según
+                                cada situación.<br><br>
+                                Ubica tu caso, encuentra el canal y sigue tu ruta.
                             </p>
-
-                            <div class="flex justify-center md:justify-start mt-4">
-
-                                <flux:button href="https://academico.ucompensar.edu.co:8090/hermesoft/vortal/o365/login"
-                                    target="_blank" rel="noopener noreferrer" icon="academic-cap" variant="filled"
-                                    class="!bg-[#7C3AED] !text-white
-                                        hover:!bg-[#362651]
-                                        dark:!bg-[#7C3AED] dark:!text-white
-                                        dark:hover:!bg-[#b49bec]
-                                        dark:hover:!text-gray-900
-                                        transition-all duration-300">
-
-                                    Ingresa al sistema académico
-
-                                </flux:button>
-                            </div>
-
-
                         </div>
-                        <!-- Video -->
+                        <!-- Genially -->
                         <div class="w-full md:w-2/3 rounded-xl overflow-hidden shadow-lg">
                             <div class="aspect-video">
-                                <iframe title="video-matricula"
-                                    src="https://player.vimeo.com/video/670311020?badge=0&autopause=0&player_id=0&app_id=58479%22"
-                                    class="w-full h-full" frameborder="0"
-                                    referrerpolicy="strict-origin-when-cross-origin"
+                                <iframe title="genially-seguimiento"
+                                    src="https://view.genially.com/6909723df5c74b07c13f0944" class="w-full h-full"
+                                    frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
                                     allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                                     allowfullscreen>
                                 </iframe>
@@ -78,39 +70,51 @@
                 </div>
             </div>
 
-            <!-- Ítem 2: Inscribe tus cursos paso a paso -->
+            <!-- Ítem 2:Reporta un problema técnico o de acceso -->
             <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
-                <button class="w-full flex justify-between items-center px-4 py-3 text-left focus:outline-none"
-                    @click="openSection = openSection === 'cursos' ? null : 'cursos'">
+                <button
+                    class="w-full flex justify-between items-center px-4 py-3 text-left
+           focus:outline-none transition-all duration-300"
+                    :class="openSection === 'problema'
+                        ?
+                        'bg-[#7C3AED] text-white dark:bg-[#7C3AED] dark:text-white hover:!bg-[#362651]' :
+                        'bg-gray-50 text-gray-700 hover:!bg-[#ede9fe] dark:bg-gray-800 dark:text-gray-200 dark:hover:!bg-[#b49bec] dark:hover:!text-gray-900'"
+                    @click="openSection = openSection === 'problema' ? null : 'problema'">
                     <h4
-                        class="text-base sm:text-lg md:text-xl lg:text-xl font-semibold text-gray-800 dark:text-gray-100">
-                        Inscribe tus cursos paso a paso
+                        class="text-base sm:text-lg md:text-xl lg:text-xl
+                        font-semibold text-inherit">
+                        Reporta un problema técnico o de acceso
                     </h4>
-                    <span x-text="openSection === 'cursos' ? '-' : '+'"
+                    <span x-text="openSection === 'problema' ? '-' : '+'"
                         class="text-xl font-bold text-gray-700 dark:text-gray-200"></span>
                 </button>
 
-                <div x-show="openSection === 'cursos'" x-collapse class="border-t border-gray-200 dark:border-gray-700">
+                <div x-show="openSection === 'problema'" x-collapse
+                    class="border-t border-gray-200 dark:border-gray-700">
                     <div class="flex flex-col md:flex-row items-center justify-center gap-6 mt-6 px-4 pb-6">
-                        {{-- <!-- Genially -->
+                        <!-- Genially -->
                         <div class="w-full md:w-2/3 rounded-xl overflow-hidden shadow-lg">
                             <div class="aspect-video">
-                                <iframe title="genially-cursos"
+                                <iframe title="genially-problema"
                                     src="https://player.vimeo.com/video/1133852219?h=6eef8cd54a" class="w-full h-full"
                                     frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
                                     allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                                     allowfullscreen>
                                 </iframe>
                             </div>
-                        </div> --}}
+                        </div>
 
                         <!-- Texto -->
                         <div class="w-full md:w-1/3 text-center md:text-left">
                             <p
                                 class="text-sm sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
-                                ¿Ya sabes qué materias vas a ver este semestre?<br><br>
-                                Arma tu horario sin enredos. En este instructivo te mostramos, paso a paso, cómo
-                                inscribir tus materias, revisar tus opciones y dejar todo listo para empezar con toda.
+                                <strong>¿Intentaste entrar y la plataforma decidió no cooperar?</strong><br><br>
+                                Antes de pensar que algo está mal con tu cuenta, hay una cosa clave: entra siempre desde
+                                el acceso institucional de UCcompensar. Si aun así no funciona, tranqui, también hay una
+                                ruta para reportarlo.<br><br>
+                                En este video te mostramos qué revisar, dónde reportar el problema y qué información
+                                enviar para que soporte pueda entender qué pasó y ayudarte más rápido.<br><br>
+                                Un pantallazo del error puede ahorrar muchas vueltas.
                             </p>
                         </div>
                     </div>
@@ -119,10 +123,17 @@
 
             <!-- Ítem 3: Crea y consulta tus solicitudes en el CRM -->
             <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
-                <button class="w-full flex justify-between items-center px-4 py-3 text-left focus:outline-none"
+                <button
+                    class="w-full flex justify-between items-center px-4 py-3 text-left
+           focus:outline-none transition-all duration-300"
+                    :class="openSection === 'consulta'
+                        ?
+                        'bg-[#7C3AED] text-white dark:bg-[#7C3AED] dark:text-white hover:!bg-[#362651]' :
+                        'bg-gray-50 text-gray-700 hover:!bg-[#ede9fe] dark:bg-gray-800 dark:text-gray-200 dark:hover:!bg-[#b49bec] dark:hover:!text-gray-900'"
                     @click="openSection = openSection === 'consulta' ? null : 'consulta'">
                     <h4
-                        class="text-base sm:text-lg md:text-xl lg:text-xl font-semibold text-gray-800 dark:text-gray-100">
+                        class="text-base sm:text-lg md:text-xl lg:text-xl
+                        font-semibold text-inherit">
                         Crea y consulta tus solicitudes en el CRM
                     </h4>
                     <span x-text="openSection === 'consulta' ? '-' : '+'"
@@ -162,10 +173,17 @@
 
             <!-- Ítem 4: Solicita tutoría, monitoría o asesoría académica -->
             <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
-                <button class="w-full flex justify-between items-center px-4 py-3 text-left focus:outline-none"
-                    @click="openSection = openSection === 'tutoria' ? null : 'tutoria'">
+                <button
+                    class="w-full flex justify-between items-center px-4 py-3 text-left
+           focus:outline-none transition-all duration-300"
+                    :class="openSection === 'tutoria'
+                        ?
+                        'bg-[#7C3AED] text-white dark:bg-[#7C3AED] dark:text-white hover:!bg-[#362651]' :
+                        'bg-gray-50 text-gray-700 hover:!bg-[#ede9fe] dark:bg-gray-800 dark:text-gray-200 dark:hover:!bg-[#b49bec] dark:hover:!text-gray-900'"
+                    @click="openSection = openSection === 'tutoeia' ? null : 'tutoria'">
                     <h4
-                        class="text-base sm:text-lg md:text-xl lg:text-xl font-semibold text-gray-800 dark:text-gray-100">
+                        class="text-base sm:text-lg md:text-xl lg:text-xl
+                        font-semibold text-inherit">
                         Solicita tutoría, monitoría o asesoría académica
                     </h4>
                     <span x-text="openSection === 'tutoria' ? '-' : '+'"
@@ -203,10 +221,17 @@
 
             <!-- Ítem 5: ¿Qué hacer si tienes bajo rendimiento académico?-->
             <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
-                <button class="w-full flex justify-between items-center px-4 py-3 text-left focus:outline-none"
+                <button
+                    class="w-full flex justify-between items-center px-4 py-3 text-left
+           focus:outline-none transition-all duration-300"
+                    :class="openSection === 'bajo-rendimiento'
+                        ?
+                        'bg-[#7C3AED] text-white dark:bg-[#7C3AED] dark:text-white hover:!bg-[#362651]' :
+                        'bg-gray-50 text-gray-700 hover:!bg-[#ede9fe] dark:bg-gray-800 dark:text-gray-200 dark:hover:!bg-[#b49bec] dark:hover:!text-gray-900'"
                     @click="openSection = openSection === 'bajo-rendimiento' ? null : 'bajo-rendimiento'">
                     <h4
-                        class="text-base sm:text-lg md:text-xl lg:text-xl font-semibold text-gray-800 dark:text-gray-100">
+                        class="text-base sm:text-lg md:text-xl lg:text-xl
+                        font-semibold text-inherit">
                         ¿Qué hacer si tienes bajo rendimiento académico?
                     </h4>
                     <span x-text="openSection === 'bajo-rendimiento' ? '-' : '+'"
@@ -244,10 +269,17 @@
 
             <!-- Ítem 6: Solicita orientación vocacional -->
             <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
-                <button class="w-full flex justify-between items-center px-4 py-3 text-left focus:outline-none"
+                <button
+                    class="w-full flex justify-between items-center px-4 py-3 text-left
+           focus:outline-none transition-all duration-300"
+                    :class="openSection === 'orientacion-vocacional'
+                        ?
+                        'bg-[#7C3AED] text-white dark:bg-[#7C3AED] dark:text-white hover:!bg-[#362651]' :
+                        'bg-gray-50 text-gray-700 hover:!bg-[#ede9fe] dark:bg-gray-800 dark:text-gray-200 dark:hover:!bg-[#b49bec] dark:hover:!text-gray-900'"
                     @click="openSection = openSection === 'orientacion-vocacional' ? null : 'orientacion-vocacional'">
                     <h4
-                        class="text-base sm:text-lg md:text-xl lg:text-xl font-semibold text-gray-800 dark:text-gray-100">
+                        class="text-base sm:text-lg md:text-xl lg:text-xl
+                        font-semibold text-inherit">
                         Solicita orientación vocacional
                     </h4>
                     <span x-text="openSection === 'orientacion-vocacional' ? '-' : '+'"
