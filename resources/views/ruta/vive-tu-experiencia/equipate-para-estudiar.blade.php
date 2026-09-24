@@ -38,7 +38,7 @@
             <!-- Genially -->
             <div class="w-full md:w-2/3 rounded-xl overflow-hidden shadow-lg">
                 <div class="aspect-video">
-                    <iframe title="genially-2" src="https://view.genially.com/690288b15151ac3654f965fa"
+                    <iframe title="video-correo" src="https://player.vimeo.com/video/1229528893?badge=0&autopause=0&player_id=0&app_id=58479%22"
                         class="w-full h-full" frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
                         allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                         allowfullscreen>
@@ -50,7 +50,7 @@
         <div class="text-left mt-8 flex flex-col items-center w-full gap-10 p-6">
             <h3
                 class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-gray-900 dark:text-white leading-relaxed text-left">
-                Descubre cómo sacarle juego a OneDrive
+                Descubre cómo sacarle jugo a OneDrive
             </h3>
         </div>
 
