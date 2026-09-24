@@ -71,11 +71,11 @@
                                 Iniciar Sesión
                             </a>
 
-                            @if (Route::has('register'))
+                            {{-- @if (Route::has('register'))
                                 <a href="{{ route('register') }}" class="btn btn-outline-secondary mb-3 w-100">
                                     Registrar
                                 </a>
-                            @endif
+                            @endif --}}
                         @endauth
                     @endif
                 </div>
