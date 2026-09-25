@@ -186,7 +186,7 @@
     {{-- ============================================================= --}}
 
     <flux:header sticky
-        class="!min-h-[92px] w-full px-4 sm:px-5 lg:px-6
+        class="!min-h-[92px] z-[100] w-full px-4 sm:px-5 lg:px-6
            border-b border-zinc-200 bg-white/95 shadow-sm backdrop-blur
            dark:border-zinc-800 dark:bg-zinc-950/95">
 
@@ -297,7 +297,7 @@
                         Solución E-Learning
                     </flux:menu.item>
 
-                    
+
                 </flux:menu>
 
             </flux:dropdown>
@@ -329,7 +329,8 @@
             {{-- INICIO --}}
             {{-- ===================================================== --}}
 
-            <a href="{{ route('empieza-por-aqui') }}" wire:navigate @if (request()->routeIs('empieza-por-aqui')) aria-current="page" @endif
+            <a href="{{ route('empieza-por-aqui') }}" wire:navigate
+                @if (request()->routeIs('empieza-por-aqui')) aria-current="page" @endif
                 class="relative inline-flex h-full items-center gap-2
                border-b-[3px] px-3 text-xs font-semibold transition
                2xl:px-4 2xl:text-sm
@@ -342,7 +343,7 @@
                {{ request()->routeIs('empieza-por-aqui')
                    ? 'border-violet-600 text-violet-700 dark:border-violet-400 dark:text-violet-300'
                    : 'border-transparent text-zinc-600 hover:border-violet-300 hover:text-violet-700
-                                                                                                   dark:text-zinc-300 dark:hover:border-violet-700 dark:hover:text-violet-300' }}">
+                                                                                                                  dark:text-zinc-300 dark:hover:border-violet-700 dark:hover:text-violet-300' }}">
 
                 <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
                     class="size-5 shrink-0">
@@ -386,7 +387,7 @@
                        {{ $isSectionActive
                            ? 'border-violet-600 text-violet-700 dark:border-violet-400 dark:text-violet-300'
                            : 'border-transparent text-zinc-600 hover:border-violet-300 hover:text-violet-700
-                                                                                                                           dark:text-zinc-300 dark:hover:border-violet-700 dark:hover:text-violet-300' }}">
+                                                                                                                                                  dark:text-zinc-300 dark:hover:border-violet-700 dark:hover:text-violet-300' }}">
 
                         {{ $section['label'] }}
 
@@ -465,7 +466,7 @@
                 </flux:tooltip>
 
                 <flux:button x-data x-on:click="$flux.dark = ! $flux.dark" icon="moon" variant="subtle"
-                        aria-label="Toggle dark mode" />
+                    aria-label="Toggle dark mode" />
 
 
             </flux:navbar>

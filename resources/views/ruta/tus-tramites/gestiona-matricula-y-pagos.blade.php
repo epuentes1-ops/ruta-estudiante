@@ -15,52 +15,76 @@
         </div>
 
         <!-- ACORDEÓN-->
-        <div x-data="{ openSection: 'canal' }" class="w-full max-w-6xl mx-auto mt-8 px-4 space-y-6">
+        <div x-data="{ openSection: 'ruta-matricula' }" class="w-full max-w-6xl mx-auto mt-8 px-4 space-y-6">
 
-            <!-- Ítem 1: Encuentra el canal de atención que necesitas -->
+            <!-- Ítem 1: Ruta de matrícula, inscripción y pago  -->
             <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden shadow-sm">
                 <button
                     class="w-full flex justify-between items-center px-4 py-3 text-left
                     focus:outline-none transition-all duration-300"
-                    :class="openSection === 'canal'
+                    :class="openSection === 'ruta-matricula'
                         ?
                         'bg-[#7C3AED] text-white dark:bg-[#7C3AED] dark:text-white hover:!bg-[#362651]' :
                         'bg-gray-50 text-gray-700 hover:!bg-[#ede9fe] dark:bg-gray-800 dark:text-gray-200 dark:hover:!bg-[#b49bec] dark:hover:!text-gray-900'"
-                    @click="openSection = openSection === 'canal' ? null : 'canal'">
+                    @click="openSection = openSection === 'ruta-matricula' ? null : 'ruta-matricula'">
 
                     <h4
                         class="text-base sm:text-lg md:text-xl lg:text-xl
                         font-semibold text-inherit">
-                        Encuentra el canal de atención que necesitas
+                        Ruta de matrícula, inscripción y pago
                     </h4>
 
-                    <span x-text="openSection === 'canal' ? '−' : '+'" class="text-xl font-bold text-inherit">
+                    <span x-text="openSection === 'ruta-matricula' ? '−' : '+'" class="text-xl font-bold text-inherit">
                     </span>
 
                 </button>
 
-                <div x-show="openSection === 'canal'" x-collapse class="border-t border-gray-200 dark:border-gray-700">
+                <div x-show="openSection === 'ruta-matricula'" x-collapse
+                    class="border-t border-gray-200 dark:border-gray-700">
                     <div class="flex flex-col md:flex-row items-center justify-center gap-6 mt-6 px-4 pb-6">
                         <!-- Texto -->
                         <div class="w-full md:w-1/3 text-center md:text-left">
                             <p
                                 class="text-sm sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
-                                <strong>¿Tienes una duda y no sabes a quién preguntarle? </strong><br><br>
-                                Tranqui, no tienes que ir preguntando de chat en chat hasta encontrar a la persona
-                                indicada. En UCompensar tienes diferentes canales según lo que necesites: desde una duda
-                                sobre una nota o una materia, hasta problemas para entrar a una plataforma o situaciones
-                                relacionadas con tu proceso académico.<br><br>
-                                Aquí encontrarás la ruta más fácil para saber a quién acudir y dónde pedir ayuda, según
-                                cada situación.<br><br>
-                                Ubica tu caso, encuentra el canal y sigue tu ruta.
+                                <strong>¿Llegó el momento de matricularte y estás como: bueno… ¿y ahora qué
+                                    hago?</strong><br><br>
+                                Tranqui. Antes de que el semestre arranque, hay varios pasos que debes tener claros:
+                                cuándo matricularte, cómo inscribir tus cursos y cómo hacer el pago.<br><br>
+                                Aquí tienes la ruta completa para que sepas qué va primero, qué sigue y en qué momento
+                                darle clic a cada cosa.<br><br>
+                                Organízalo con tiempo y empieza el semestre sin correr.
                             </p>
+                            <br>
+                            <div class="flex flex-col sm:flex-row gap-4">
+
+                                <flux:button href="https://campusvirtual.ucompensar.edu.co/" target="_blank"
+                                    rel="noopener noreferrer" icon="building-office" variant="filled"
+                                    class="!bg-[#7C3AED] !text-white
+                                        hover:!bg-[#362651]
+                                        dark:!bg-[#7C3AED] dark:!text-white
+                                        dark:hover:!bg-[#b49bec]  dark:hover:!text-gray-900
+                                        transition-all duration-300">
+                                    Ir mi Campus Virtual
+                                </flux:button>
+
+                                <flux:button href="https://academico.ucompensar.edu.co" target="_blank"
+                                    rel="noopener noreferrer" icon="book-open" variant="filled"
+                                    class="!bg-[#7C3AED] !text-white
+                                        hover:!bg-[#362651]
+                                        dark:!bg-[#7C3AED] dark:!text-white
+                                        dark:hover:!bg-[#b49bec]  dark:hover:!text-gray-900
+                                        transition-all duration-300">
+                                    Iniciar mi proceso
+                                </flux:button>
+                            </div>
                         </div>
-                        <!-- Genially -->
+                        <!-- video -->
                         <div class="w-full md:w-2/3 rounded-xl overflow-hidden shadow-lg">
                             <div class="aspect-video">
-                                <iframe title="genially-seguimiento"
-                                    src="https://view.genially.com/6909723df5c74b07c13f0944" class="w-full h-full"
-                                    frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
+                                <iframe title="video-ruta-matricula"
+                                    src="https://player.vimeo.com/video/670311020?badge=0&autopause=0&player_id=0&app_id=58479%22"
+                                    class="w-full h-full" frameborder="0"
+                                    referrerpolicy="strict-origin-when-cross-origin"
                                     allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                                     allowfullscreen>
                                 </iframe>
@@ -70,34 +94,184 @@
                 </div>
             </div>
 
-            <!-- Ítem 2:Reporta un problema técnico o de acceso -->
+            <!-- Ítem 2:Inscribe tus cursos paso a paso -->
             <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
                 <button
                     class="w-full flex justify-between items-center px-4 py-3 text-left
            focus:outline-none transition-all duration-300"
-                    :class="openSection === 'problema'
+                    :class="openSection === 'tus-cursos'
                         ?
                         'bg-[#7C3AED] text-white dark:bg-[#7C3AED] dark:text-white hover:!bg-[#362651]' :
                         'bg-gray-50 text-gray-700 hover:!bg-[#ede9fe] dark:bg-gray-800 dark:text-gray-200 dark:hover:!bg-[#b49bec] dark:hover:!text-gray-900'"
-                    @click="openSection = openSection === 'problema' ? null : 'problema'">
+                    @click="openSection = openSection === 'tus-cursos' ? null : 'tus-cursos'">
                     <h4
                         class="text-base sm:text-lg md:text-xl lg:text-xl
                         font-semibold text-inherit">
-                        Reporta un problema técnico o de acceso
+                        Inscribe tus cursos paso a paso
                     </h4>
-                    <span x-text="openSection === 'problema' ? '-' : '+'"
+                    <span x-text="openSection === 'tus-cursos' ? '-' : '+'"
                         class="text-xl font-bold text-gray-700 dark:text-gray-200"></span>
                 </button>
 
-                <div x-show="openSection === 'problema'" x-collapse
+                <div x-show="openSection === 'tus-cursos'" x-collapse
                     class="border-t border-gray-200 dark:border-gray-700">
                     <div class="flex flex-col md:flex-row items-center justify-center gap-6 mt-6 px-4 pb-6">
-                        <!-- Genially -->
+                        <!-- Imagen -->
+                        <div class="w-full md:w-5/12 rounded-xl overflow-hidden">
+
+                            <img src="/images/banners/tramites/imgseccion2.png" alt="Consulta tus fechas claves"
+                                class="w-full h-auto object-contain" id="modelImage" style="cursor: pointer;">
+
+                        </div>
+
+                        <!-- Texto -->
+                        <div class="w-full md:w-2/3 text-center md:text-left">
+                            <p
+                                class="text-sm sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
+                                <strong>¿Ya sabes qué materias vas a ver este semestre?</strong><br><br>
+                                Arma tu horario sin enredos. En este instructivo te mostramos, paso a paso, cómo
+                                inscribir tus materias, revisar tus opciones y dejar todo listo para empezar con toda.
+                            </p>
+
+                            <br>
+
+                            <div class="flex flex-col sm:flex-row gap-4">
+
+                                <flux:button
+                                    href="https://bancodecontenidos.ucompensar.edu.co/index.php/s/zEeHKEJEJ8L4eES"
+                                    target="_blank" rel="noopener noreferrer" icon="document-arrow-down"
+                                    variant="filled"
+                                    class="!bg-[#7C3AED] !text-white
+                                        hover:!bg-[#362651]
+                                        dark:!bg-[#7C3AED] dark:!text-white
+                                        dark:hover:!bg-[#b49bec]  dark:hover:!text-gray-900
+                                        transition-all duration-300">
+                                    Ir al paso a paso
+                                </flux:button>
+
+                                <flux:button href="https://academico.ucompensar.edu.co" target="_blank"
+                                    rel="noopener noreferrer" icon="book-open" variant="filled"
+                                    class="!bg-[#7C3AED] !text-white
+                                        hover:!bg-[#362651]
+                                        dark:!bg-[#7C3AED] dark:!text-white
+                                        dark:hover:!bg-[#b49bec]  dark:hover:!text-gray-900
+                                        transition-all duration-300">
+                                    Inscribir mis cursos
+                                </flux:button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ítem 3: Consulta el estado de tu matrícula y recibos-->
+            <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                <button
+                    class="w-full flex justify-between items-center px-4 py-3 text-left
+           focus:outline-none transition-all duration-300"
+                    :class="openSection === 'estado-matricula'
+                        ?
+                        'bg-[#7C3AED] text-white dark:bg-[#7C3AED] dark:text-white hover:!bg-[#362651]' :
+                        'bg-gray-50 text-gray-700 hover:!bg-[#ede9fe] dark:bg-gray-800 dark:text-gray-200 dark:hover:!bg-[#b49bec] dark:hover:!text-gray-900'"
+                    @click="openSection = openSection === 'estado-matricula' ? null : 'estado-matricula'">
+                    <h4
+                        class="text-base sm:text-lg md:text-xl lg:text-xl
+                        font-semibold text-inherit">
+                        Consulta el estado de tu matrícula y recibos
+                    </h4>
+                    <span x-text="openSection === 'estado-matricula' ? '-' : '+'"
+                        class="text-xl font-bold text-gray-700 dark:text-gray-200"></span>
+                </button>
+
+                <div x-show="openSection === 'estado-matricula'" x-collapse
+                    class="border-t border-gray-200 dark:border-gray-700">
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-6 mt-6 px-4 pb-6">
+                        <!-- Texto -->
+                        <div class="w-full md:w-1/3 text-center md:text-left">
+                            <p
+                                class="text-sm sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
+                                <strong>¿Llegó el momento de la matrícula y ya estás pensando: “¿Dónde miro cuánto tengo
+                                    que
+                                    pagar?” o “¿será que ya aparece mi recibo?</strong><br><br>
+                                Antes de correr a pagar, primero revisa qué tienes disponible, qué está pendiente y si
+                                los valores aplicados están correctos. En este video te mostramos la ruta para consultar
+                                el estado de tu matrícula y tus recibos de forma rápida y saber exactamente qué tienes
+                                frente a ti.
+                            </p>
+
+                            <br>
+
+                            <div class="flex flex-col sm:flex-row gap-4">
+
+                                <flux:button href="https://estudiantes.ucompensar.edu.co:8081/ucompensarPolLTD/"
+                                    target="_blank" rel="noopener noreferrer" icon="currency-dollar" variant="filled"
+                                    class="!bg-[#7C3AED] !text-white
+                                        hover:!bg-[#362651]
+                                        dark:!bg-[#7C3AED] dark:!text-white
+                                        dark:hover:!bg-[#b49bec]  dark:hover:!text-gray-900
+                                        transition-all duration-300">
+                                    Consulta el estado de mi matrícula
+                                </flux:button>
+                            </div>
+                            <br>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <flux:button href="https://ucompensar2.my.site.com/estudiantes/s/ " target="_blank"
+                                    rel="noopener noreferrer" icon="cursor-arrow-ripple" variant="filled"
+                                    class="!bg-[#7C3AED] !text-white
+                                        hover:!bg-[#362651]
+                                        dark:!bg-[#7C3AED] dark:!text-white
+                                        dark:hover:!bg-[#b49bec]  dark:hover:!text-gray-900
+                                        transition-all duration-300">
+                                    Reportar una inconsistencia
+                                </flux:button>
+                            </div>
+
+                        </div>
+                        <!-- video -->
                         <div class="w-full md:w-2/3 rounded-xl overflow-hidden shadow-lg">
                             <div class="aspect-video">
-                                <iframe title="genially-problema"
-                                    src="https://player.vimeo.com/video/1133852219?h=6eef8cd54a" class="w-full h-full"
-                                    frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
+                                <iframe title="video-estado-matricula"
+                                    src="https://player.vimeo.com/video/1229548995?badge=0&autopause=0&player_id=0&app_id=58479%22"
+                                    class="w-full h-full" frameborder="0"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ítem 4: Realiza tus pagos en línea -->
+            <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                <button
+                    class="w-full flex justify-between items-center px-4 py-3 text-left
+           focus:outline-none transition-all duration-300"
+                    :class="openSection === 'pagos-en-linea'
+                        ?
+                        'bg-[#7C3AED] text-white dark:bg-[#7C3AED] dark:text-white hover:!bg-[#362651]' :
+                        'bg-gray-50 text-gray-700 hover:!bg-[#ede9fe] dark:bg-gray-800 dark:text-gray-200 dark:hover:!bg-[#b49bec] dark:hover:!text-gray-900'"
+                    @click="openSection = openSection === 'pagos-en-linea' ? null : 'pagos-en-linea'">
+                    <h4
+                        class="text-base sm:text-lg md:text-xl lg:text-xl
+                        font-semibold text-inherit">
+                        Realiza tus pagos en línea
+                    </h4>
+                    <span x-text="openSection === 'pagos-en-linea' ? '-' : '+'"
+                        class="text-xl font-bold text-gray-700 dark:text-gray-200"></span>
+                </button>
+
+                <div x-show="openSection === 'pagos-en-linea'" x-collapse
+                    class="border-t border-gray-200 dark:border-gray-700">
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-6 mt-6 px-4 pb-6">
+                        <!-- Video -->
+                        <div class="w-full md:w-2/3 rounded-xl overflow-hidden shadow-lg">
+                            <div class="aspect-video">
+                                <iframe title="video-pagos-en-linea"
+                                    src="https://player.vimeo.com/video/1229552696?badge=0&autopause=0&player_id=0&app_id=58479%22"
+                                    class="w-full h-full" frameborder="0"
+                                    referrerpolicy="strict-origin-when-cross-origin"
                                     allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                                     allowfullscreen>
                                 </iframe>
@@ -108,51 +282,63 @@
                         <div class="w-full md:w-1/3 text-center md:text-left">
                             <p
                                 class="text-sm sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
-                                <strong>¿Intentaste entrar y la plataforma decidió no cooperar?</strong><br><br>
-                                Antes de pensar que algo está mal con tu cuenta, hay una cosa clave: entra siempre desde
-                                el acceso institucional de UCcompensar. Si aun así no funciona, tranqui, también hay una
-                                ruta para reportarlo.<br><br>
-                                En este video te mostramos qué revisar, dónde reportar el problema y qué información
-                                enviar para que soporte pueda entender qué pasó y ayudarte más rápido.<br><br>
-                                Un pantallazo del error puede ahorrar muchas vueltas.
+                                <strong>Hay momentos del semestre en los que solo quieres resolver una cosa:
+                                    pagar y seguir con lo tuyo.</strong><br><br>
+                                Pero entre encontrar el recibo, revisar cuánto debes, elegir cómo pagar y asegurarte de
+                                que todo quede listo, es fácil perderse entre tantos clics. Aquí te mostramos la ruta
+                                completa para realizar tus pagos en línea, descargar tu recibo y conocer qué debes tener
+                                en cuenta según el medio de pago que elijas.
                             </p>
+                            <br>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <flux:button href="https://estudiantes.ucompensar.edu.co:8081/ucompensarPolLTD/"
+                                    target="_blank" rel="noopener noreferrer" icon="currency-dollar"
+                                    variant="filled"
+                                    class="!bg-[#7C3AED] !text-white
+                                        hover:!bg-[#362651]
+                                        dark:!bg-[#7C3AED] dark:!text-white
+                                        dark:hover:!bg-[#b49bec]  dark:hover:!text-gray-900
+                                        transition-all duration-300">
+                                    Ir a pagar mis facturas
+                                </flux:button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Ítem 3: Crea y consulta tus solicitudes en el CRM -->
+            <!-- Ítem 5: Consulta apoyos económicos y orientación financiera-->
             <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
                 <button
                     class="w-full flex justify-between items-center px-4 py-3 text-left
            focus:outline-none transition-all duration-300"
-                    :class="openSection === 'consulta'
+                    :class="openSection === 'apoyos-economicos'
                         ?
                         'bg-[#7C3AED] text-white dark:bg-[#7C3AED] dark:text-white hover:!bg-[#362651]' :
                         'bg-gray-50 text-gray-700 hover:!bg-[#ede9fe] dark:bg-gray-800 dark:text-gray-200 dark:hover:!bg-[#b49bec] dark:hover:!text-gray-900'"
-                    @click="openSection = openSection === 'consulta' ? null : 'consulta'">
+                    @click="openSection = openSection === 'apoyos-economicos' ? null : 'apoyos-economicos'">
                     <h4
                         class="text-base sm:text-lg md:text-xl lg:text-xl
                         font-semibold text-inherit">
-                        Crea y consulta tus solicitudes en el CRM
+                        Consulta apoyos económicos y orientación financiera
                     </h4>
-                    <span x-text="openSection === 'consulta' ? '-' : '+'"
+                    <span x-text="openSection === 'apoyos-economicos' ? '-' : '+'"
                         class="text-xl font-bold text-gray-700 dark:text-gray-200"></span>
                 </button>
 
-                <div x-show="openSection === 'consulta'" x-collapse
+                <div x-show="openSection === 'apoyos-economicos'" x-collapse
                     class="border-t border-gray-200 dark:border-gray-700">
                     <div class="flex flex-col md:flex-row items-center justify-center gap-6 mt-6 px-4 pb-6">
                         <!-- Texto -->
                         <div class="w-full md:w-1/3 text-center md:text-left">
                             <p
                                 class="text-sm sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
-                                <strong>¿Necesitas hacer una solicitud y no sabes por dónde empezar?</strong><br><br>
-                                Si estás estudiando en modalidad virtual en UCompensar, hay una ruta para radicar tus
-                                solicitudes académicas y administrativas sin darle mil vueltas.<br><br>
-                                En este video te mostramos paso a paso dónde entrar, qué seleccionar y cómo enviar tu
-                                solicitud para que llegue al lugar correcto.<br><br>
-                                Porque saber dónde pedir ayuda también hace parte de la ruta.
+                                <strong>¿La matrícula te está haciendo sacar cuentas?</strong><br><br>
+                                Antes de pensar que toca resolverlo todo de una, date una vuelta por las opciones que
+                                tiene UCompensar para apoyarte. En este video te mostramos dónde encontrar becas,
+                                descuentos y alternativas de financiación, y cómo revisar cuál puede ajustarse mejor a
+                                tu situación.<br><br>
+                                Porque antes de sacar la calculadora, vale la pena conocer tus opciones.
                             </p>
                         </div>
                         <!-- video -->
@@ -171,129 +357,33 @@
                 </div>
             </div>
 
-            <!-- Ítem 4: Solicita tutoría, monitoría o asesoría académica -->
+            <!-- Ítem 6: Consulta tus horarios, grupos y cursos inscritos-->
             <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
                 <button
                     class="w-full flex justify-between items-center px-4 py-3 text-left
            focus:outline-none transition-all duration-300"
-                    :class="openSection === 'tutoria'
+                    :class="openSection === 'consulta-horarios'
                         ?
                         'bg-[#7C3AED] text-white dark:bg-[#7C3AED] dark:text-white hover:!bg-[#362651]' :
                         'bg-gray-50 text-gray-700 hover:!bg-[#ede9fe] dark:bg-gray-800 dark:text-gray-200 dark:hover:!bg-[#b49bec] dark:hover:!text-gray-900'"
-                    @click="openSection = openSection === 'tutoeia' ? null : 'tutoria'">
+                    @click="openSection = openSection === 'consulta-horarios' ? null : 'consulta-horarios'">
                     <h4
                         class="text-base sm:text-lg md:text-xl lg:text-xl
                         font-semibold text-inherit">
-                        Solicita tutoría, monitoría o asesoría académica
+                        Consulta tus horarios, grupos y cursos inscritos
                     </h4>
-                    <span x-text="openSection === 'tutoria' ? '-' : '+'"
+                    <span x-text="openSection === 'consulta-horarios' ? '-' : '+'"
                         class="text-xl font-bold text-gray-700 dark:text-gray-200"></span>
                 </button>
 
-                <div x-show="openSection === 'tutoria'" x-collapse
+                <div x-show="openSection === 'consulta-horarios'" x-collapse
                     class="border-t border-gray-200 dark:border-gray-700">
                     <div class="flex flex-col md:flex-row items-center justify-center gap-6 mt-6 px-4 pb-6">
-                        <!-- Genially -->
-                        <div class="w-full md:w-2/3 rounded-xl overflow-hidden shadow-lg">
-                            <div class="aspect-video">
-                                <iframe title="genially-tutoria"
-                                    src="https://view.genially.com/66bb8c8990672ae837c00954" class="w-full h-full"
-                                    frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
-                                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                                    allowfullscreen>
-                                </iframe>
-                            </div>
-                        </div>
-
-                        <!-- Texto -->
-                        <div class="w-full md:w-1/3 text-center md:text-left">
-                            <p
-                                class="text-sm sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
-                                <strong>¿Hay una materia que se te está poniendo cuesta arriba?</strong><br><br>
-                                Tranquilo, no tienes que resolver todo solo.<br><br>
-                                Aquí te mostramos cómo pedir una tutoría y encontrar el apoyo que necesitas para seguir
-                                avanzando.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Ítem 5: ¿Qué hacer si tienes bajo rendimiento académico?-->
-            <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
-                <button
-                    class="w-full flex justify-between items-center px-4 py-3 text-left
-           focus:outline-none transition-all duration-300"
-                    :class="openSection === 'bajo-rendimiento'
-                        ?
-                        'bg-[#7C3AED] text-white dark:bg-[#7C3AED] dark:text-white hover:!bg-[#362651]' :
-                        'bg-gray-50 text-gray-700 hover:!bg-[#ede9fe] dark:bg-gray-800 dark:text-gray-200 dark:hover:!bg-[#b49bec] dark:hover:!text-gray-900'"
-                    @click="openSection = openSection === 'bajo-rendimiento' ? null : 'bajo-rendimiento'">
-                    <h4
-                        class="text-base sm:text-lg md:text-xl lg:text-xl
-                        font-semibold text-inherit">
-                        ¿Qué hacer si tienes bajo rendimiento académico?
-                    </h4>
-                    <span x-text="openSection === 'bajo-rendimiento' ? '-' : '+'"
-                        class="text-xl font-bold text-gray-700 dark:text-gray-200"></span>
-                </button>
-
-                <div x-show="openSection === 'bajo-rendimiento'" x-collapse
-                    class="border-t border-gray-200 dark:border-gray-700">
-                    <div class="flex flex-col md:flex-row items-center justify-center gap-6 mt-6 px-4 pb-6">
-                        <!-- Texto -->
-                        <div class="w-full md:w-1/3 text-center md:text-left">
-                            <p
-                                class="text-sm sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
-                                <strong>¿Tus notas no están saliendo como esperabas?</strong><br><br>
-                                Antes de dejar que se acumule todo, <strong>haz una pausa y pide
-                                    acompañamiento</strong>.<br><br>
-                                En este video te mostramos la ruta para levantar la mano y empezar a recuperar el ritmo.
-                            </p>
-                        </div>
                         <!-- video -->
                         <div class="w-full md:w-2/3 rounded-xl overflow-hidden shadow-lg">
                             <div class="aspect-video">
-                                <iframe title="video-crear-solicitudes-CRM"
-                                    src="https://player.vimeo.com/video/834164515?badge=0&autopause=0&player_id=0&app_id=58479%22"
-                                    class="w-full h-full" frameborder="0"
-                                    referrerpolicy="strict-origin-when-cross-origin"
-                                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                                    allowfullscreen>
-                                </iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Ítem 6: Solicita orientación vocacional -->
-            <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
-                <button
-                    class="w-full flex justify-between items-center px-4 py-3 text-left
-           focus:outline-none transition-all duration-300"
-                    :class="openSection === 'orientacion-vocacional'
-                        ?
-                        'bg-[#7C3AED] text-white dark:bg-[#7C3AED] dark:text-white hover:!bg-[#362651]' :
-                        'bg-gray-50 text-gray-700 hover:!bg-[#ede9fe] dark:bg-gray-800 dark:text-gray-200 dark:hover:!bg-[#b49bec] dark:hover:!text-gray-900'"
-                    @click="openSection = openSection === 'orientacion-vocacional' ? null : 'orientacion-vocacional'">
-                    <h4
-                        class="text-base sm:text-lg md:text-xl lg:text-xl
-                        font-semibold text-inherit">
-                        Solicita orientación vocacional
-                    </h4>
-                    <span x-text="openSection === 'orientacion-vocacional' ? '-' : '+'"
-                        class="text-xl font-bold text-gray-700 dark:text-gray-200"></span>
-                </button>
-
-                <div x-show="openSection === 'orientacion-vocacional'" x-collapse
-                    class="border-t border-gray-200 dark:border-gray-700">
-                    <div class="flex flex-col md:flex-row items-center justify-center gap-6 mt-6 px-4 pb-6">
-                        <!-- Genially -->
-                        <div class="w-full md:w-2/3 rounded-xl overflow-hidden shadow-lg">
-                            <div class="aspect-video">
-                                <iframe title="genially-orientacion-vocacional"
-                                    src="https://view.genially.com/66bb8c8990672ae837c00954" class="w-full h-full"
+                                <iframe title="video-consulta-horarios"
+                                    src="https://player.vimeo.com/video/1229563619?badge=0&autopause=0&player_id=0&app_id=58479%22" class="w-full h-full"
                                     frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
                                     allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                                     allowfullscreen>
@@ -305,11 +395,25 @@
                         <div class="w-full md:w-1/3 text-center md:text-left">
                             <p
                                 class="text-sm sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
-                                <strong>¿Tienes mil preguntas sobre tu futuro y cero respuestas claras?
+                                <strong>Tu horario es el mapa de tu semestre: te muestra tus clases, grupos, asignaturas y momentos para que puedas organizar tu tiempo y disfrutar mejor cada etapa de la U.
                                 </strong><br><br>
-                                Tranqui, no tienes que tenerlo todo decidido. Aquí te mostramos cómo solicitar
-                                orientación vocacional y empezar a descubrir qué camino va más contigo.
+                                Aquí te mostramos cómo consultarlo de forma rápida y tener toda esta información a la mano desde el Campus Virtual.
                             </p>
+
+                            <br>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <flux:button href="https://academico.ucompensar.edu.co/consultaHorario/"
+                                    target="_blank" rel="noopener noreferrer" icon="table-cells"
+                                    variant="filled"
+                                    class="!bg-[#7C3AED] !text-white
+                                        hover:!bg-[#362651]
+                                        dark:!bg-[#7C3AED] dark:!text-white
+                                        dark:hover:!bg-[#b49bec]  dark:hover:!text-gray-900
+                                        transition-all duration-300">
+                                    Ir a consultar mi horario
+                                </flux:button>
+                            </div>
+
                         </div>
                     </div>
                 </div>

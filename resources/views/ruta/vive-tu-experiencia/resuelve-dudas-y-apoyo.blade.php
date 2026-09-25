@@ -226,7 +226,7 @@
                         ?
                         'bg-[#7C3AED] text-white dark:bg-[#7C3AED] dark:text-white hover:!bg-[#362651]' :
                         'bg-gray-50 text-gray-700 hover:!bg-[#ede9fe] dark:bg-gray-800 dark:text-gray-200 dark:hover:!bg-[#b49bec] dark:hover:!text-gray-900'"
-                    @click="openSection = openSection === 'tutoeia' ? null : 'tutoria'">
+                    @click="openSection = openSection === 'tutoria' ? null : 'tutoria'">
                     <h4
                         class="text-base sm:text-lg md:text-xl lg:text-xl
                         font-semibold text-inherit">
