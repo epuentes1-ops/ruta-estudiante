@@ -108,7 +108,7 @@
 
                 [
                     'numero' => '05',
-                    'categoria' => 'Reingreso',
+                    'categoria' => 'Reingresos',
                     'titulo' => 'Solicita tu reingreso',
 
                     'descripcion' => [
