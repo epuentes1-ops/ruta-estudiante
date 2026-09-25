@@ -77,7 +77,7 @@
                         <div class="w-full md:w-5/12 rounded-xl overflow-hidden">
 
                             <img src="/images/banners/vive/imgseccion1_1.png" alt="Consulta tus fechas claves"
-                                class="w-full h-auto object-contain" id="modelImage" style="cursor: pointer;">
+                                class="w-full h-auto object-contain" id="modelImage">
 
                         </div>
                     </div>
@@ -371,7 +371,7 @@
                         <div class="w-full md:w-5/12 rounded-xl overflow-hidden">
 
                             <img src="/images/banners/vive/imgseccion1_3.png" alt="Consulta tus fechas claves"
-                                class="w-full h-auto object-contain" id="modelImage" style="cursor: pointer;">
+                                class="w-full h-auto object-contain" id="modelImage">
 
                         </div>
 

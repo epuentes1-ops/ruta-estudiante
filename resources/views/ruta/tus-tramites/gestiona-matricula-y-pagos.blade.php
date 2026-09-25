@@ -68,7 +68,7 @@
                                 </flux:button>
 
                                 <flux:button href="https://academico.ucompensar.edu.co" target="_blank"
-                                    rel="noopener noreferrer" icon="book-open" variant="filled"
+                                    rel="noopener noreferrer" icon="academic-cap" variant="filled"
                                     class="!bg-[#7C3AED] !text-white
                                         hover:!bg-[#362651]
                                         dark:!bg-[#7C3AED] dark:!text-white
@@ -120,7 +120,7 @@
                         <div class="w-full md:w-5/12 rounded-xl overflow-hidden">
 
                             <img src="/images/banners/tramites/imgseccion2.png" alt="Consulta tus fechas claves"
-                                class="w-full h-auto object-contain" id="modelImage" style="cursor: pointer;">
+                                class="w-full h-auto object-contain" id="modelImage">
 
                         </div>
 
@@ -150,7 +150,7 @@
                                 </flux:button>
 
                                 <flux:button href="https://academico.ucompensar.edu.co" target="_blank"
-                                    rel="noopener noreferrer" icon="book-open" variant="filled"
+                                    rel="noopener noreferrer" icon="academic-cap" variant="filled"
                                     class="!bg-[#7C3AED] !text-white
                                         hover:!bg-[#362651]
                                         dark:!bg-[#7C3AED] dark:!text-white
