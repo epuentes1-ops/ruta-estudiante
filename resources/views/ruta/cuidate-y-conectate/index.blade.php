@@ -28,8 +28,7 @@
                 </h2>
 
                 <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">
-                    Conoce las herramientas y espacios que tienes disponibles
-                    para iniciar tu experiencia académica.
+                    Cuida tu cuerpo y mente, aquí encontraras herramientas para mejorar tus habitos saludables.
                 </p>
 
                 <span
@@ -54,8 +53,7 @@
                 </h2>
 
                 <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">
-                    Encuentra recursos, herramientas y recomendaciones para
-                    preparar tu espacio y estudiar mejor.
+                    Encuentra recursos, que te apoyaran a organizar tu tiempo de estudio y familia.
                 </p>
 
                 <span
@@ -80,8 +78,7 @@
                 </h2>
 
                 <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">
-                    Planifica tus actividades, gestiona tus tiempos y organiza
-                    tus recursos académicos.
+                    Encuentra herramientas enfocadas a fortalecer tu bienestar personal.
                 </p>
 
                 <span
@@ -106,8 +103,7 @@
                 </h2>
 
                 <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">
-                    Conoce espacios para interactuar, participar y conectar
-                    con tu comunidad académica.
+                    Conocer nuestras lineas de apoyo que te ofrece UCompensar.
                 </p>
 
                 <span
@@ -132,8 +128,7 @@
                 </h2>
 
                 <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">
-                    Consulta tu progreso, revisa tus avances y mantente al día
-                    con tus actividades académicas.
+                    Encuentra charlas y conferencias, al igual actividades que pueden mejorar tu perfil profesional.
                 </p>
 
                 <span

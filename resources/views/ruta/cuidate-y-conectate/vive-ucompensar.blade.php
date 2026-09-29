@@ -957,7 +957,7 @@
 
         
         <!-- Sección Texto + video -->
-        <div class="flex flex-col md:flex-row items-center justify-center gap-6 max-w-6xl mx-auto mt-8 px-4">
+        {{-- <div class="flex flex-col md:flex-row items-center justify-center gap-6 max-w-6xl mx-auto mt-8 px-4">
 
             
             <!-- Texto -->
@@ -1017,7 +1017,7 @@
                     hacer que la guitarra suene a ti.
                 </p>
             </div>
-        </div>
+        </div> --}}
 
         
 
@@ -1049,11 +1049,11 @@
                 </div>
             </div>
 
-            <!-- Genially -->
+            <!-- video -->
             <div class="w-full md:w-2/3 rounded-xl overflow-hidden shadow-lg">
                 <div class="aspect-video">
                     <iframe title="video-correo"
-                        src="hhttps://player.vimeo.com/video/1223685139?badge=0&autopause=0&player_id=0&app_id=58479"
+                        src="https://player.vimeo.com/video/1223685139?badge=0&autopause=0&player_id=0&app_id=58479"
                         class="w-full h-full" frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
                         allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                         allowfullscreen>
