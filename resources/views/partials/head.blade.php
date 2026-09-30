@@ -46,19 +46,13 @@
 
 
 
-<!-- Clarity Tag Manager -->
-{{-- <script type="text/javascript">
-    (function(c, l, a, r, i, t, y) {
-        c[a] = c[a] || function() {
-            (c[a].q = c[a].q || []).push(arguments)
-        };
-        t = l.createElement(r);
-        t.async = 1;
-        t.src = "https://www.clarity.ms/tag/" + i;
-        y = l.getElementsByTagName(r)[0];
-        y.parentNode.insertBefore(t, y);
-    })(window, document, "clarity", "script", "v5hwjt2rnr");
-</script> --}}
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yq6wjb09if");
+</script>
 
 <!-- Chatbot Tag Manager -->
 {{-- <elevenlabs-convai agent-id="agent_6601m00gjdk8f1es742a9hkxq115"></elevenlabs-convai>
