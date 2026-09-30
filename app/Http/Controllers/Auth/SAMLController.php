@@ -154,7 +154,7 @@ class SAMLController extends Controller
 
             Auth::login($user);
 
-            return redirect('/aquiempiezatodo');
+            return redirect('/empieza-por-aqui');
         } catch (\Throwable $e) {
 
             AuthAuditService::log(
