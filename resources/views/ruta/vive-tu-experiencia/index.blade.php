@@ -1,4 +1,4 @@
-<x-layouts.app :title="__('Vive al máximo tu espacio virtual')">
+<x-layouts.app :title="__('Vive tu Experiencia')">
 
     <div class="flex flex-col items-center w-full gap-8 p-6">
         <div class="mx-auto max-w-7xl">
