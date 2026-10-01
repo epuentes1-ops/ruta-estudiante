@@ -281,16 +281,20 @@
                     {{-- ACCESOS EXTERNOS --}}
                     {{-- ================================================= --}}
 
+                    <flux:menu.item icon="building-office-2" href="https://ucompensar.edu.co/" target="_blank"
+                        rel="noopener noreferrer">
+                        UCompensar
+                    </flux:menu.item>
+
                     <flux:menu.item icon="building-office" href="https://campusvirtual.ucompensar.edu.co/"
                         target="_blank" rel="noopener noreferrer">
                         Campus Virtual
                     </flux:menu.item>
 
-                    <flux:menu.item icon="folder-git-2" href="https://repositoriocrai.ucompensar.edu.co/"
-                        target="_blank" rel="noopener noreferrer">
-                        Repositorio CRAI
+                    <flux:menu.item icon="building-library" href="https://crai.ucompensar.edu.co/" target="_blank"
+                        rel="noopener noreferrer">
+                        CRAI
                     </flux:menu.item>
-
 
                     <flux:menu.item icon="computer-desktop" href="https://virtual.ucompensar.edu.co" target="_blank"
                         rel="noopener noreferrer">
@@ -343,7 +347,7 @@
                {{ request()->routeIs('empieza-por-aqui')
                    ? 'border-violet-600 text-violet-700 dark:border-violet-400 dark:text-violet-300'
                    : 'border-transparent text-zinc-600 hover:border-violet-300 hover:text-violet-700
-                                                                                                                  dark:text-zinc-300 dark:hover:border-violet-700 dark:hover:text-violet-300' }}">
+                                                                                                                                 dark:text-zinc-300 dark:hover:border-violet-700 dark:hover:text-violet-300' }}">
 
                 <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
                     class="size-5 shrink-0">
@@ -387,7 +391,7 @@
                        {{ $isSectionActive
                            ? 'border-violet-600 text-violet-700 dark:border-violet-400 dark:text-violet-300'
                            : 'border-transparent text-zinc-600 hover:border-violet-300 hover:text-violet-700
-                                                                                                                                                  dark:text-zinc-300 dark:hover:border-violet-700 dark:hover:text-violet-300' }}">
+                                                                                                                                                                         dark:text-zinc-300 dark:hover:border-violet-700 dark:hover:text-violet-300' }}">
 
                         {{ $section['label'] }}
 
@@ -439,6 +443,15 @@
             {{-- Enlaces externos --}}
             <flux:navbar class="me-1.5 space-x-0.5 rtl:space-x-reverse py-0!">
 
+                <flux:tooltip :content="__('UCompensar')" position="bottom">
+
+                    <flux:navbar.item class="h-10 max-lg:hidden [&>div>svg]:size-5" icon="building-office-2"
+                        href="https://ucompensar.edu.co/" target="_blank" rel="noopener noreferrer"
+                        :label="__('UCompensar')" />
+
+                </flux:tooltip>
+
+
                 <flux:tooltip :content="__('Campus Virtual')" position="bottom">
 
                     <flux:navbar.item class="h-10 max-lg:hidden [&>div>svg]:size-5" icon="building-office"
@@ -448,11 +461,11 @@
                 </flux:tooltip>
 
 
-                <flux:tooltip :content="__('Repositorio CRAI')" position="bottom">
+                <flux:tooltip :content="__('CRAI')" position="bottom">
 
-                    <flux:navbar.item class="h-10 max-lg:hidden [&>div>svg]:size-5" icon="folder-git-2"
-                        href="https://repositoriocrai.ucompensar.edu.co/" target="_blank" rel="noopener noreferrer"
-                        :label="__('Repositorio CRAI')" />
+                    <flux:navbar.item class="h-10 max-lg:hidden [&>div>svg]:size-5" icon="building-library"
+                        href="https://crai.ucompensar.edu.co/" target="_blank" rel="noopener noreferrer"
+                        :label="__('CRAI')" />
 
                 </flux:tooltip>
 

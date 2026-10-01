@@ -101,7 +101,7 @@
                     'tipo' => 'vimeo',
 
                     'recurso' =>
-                        'https://player.vimeo.com/video/1229660907?badge=0&autopause=0&player_id=0&app_id=58479',
+                        'https://player.vimeo.com/video/1229661924?badge=0&autopause=0&player_id=0&app_id=58479',
 
                     'boton' => 'Ir al repositorio digital',
 
@@ -128,7 +128,7 @@
                     'boton' => 'Ver el portafolio de talleres',
 
                     'url' =>
-                        'https://unipanamericanaeduco.sharepoint.com/:b:/s/Comunidadesdeaprendizaje/IQC2DHqC9KXJRKRz6d3crNkOAeSs7h2ZxfWXQkpk0ymtzrw?e=FWjS3c',
+                        'https://bancodecontenidos.ucompensar.edu.co/index.php/s/wBMnpxQwNfmdP4w',
 
                     'tamano' => 'md:col-span-4',
                 ],

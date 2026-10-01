@@ -1,42 +1,42 @@
 @php
     $groups = [
         'Menu EduTips' => [
-            [
-                'name' => 'Aquí empieza todo',
-                'icon' => 'home',
-                'url' => route('aquiempiezatodo'),
-                'current' => request()->routeIs('aquiempiezatodo'),
-            ],
-            [
-                'name' => 'Tu camino docente',
-                'icon' => 'map',
-                'url' => route('tucaminodocente'),
-                'current' => request()->routeIs('tucaminodocente'),
-            ],
-            [
-                'name' => 'Caja de herramientas',
-                'icon' => 'rectangle-stack',
-                'url' => route('cajadeherramientas'),
-                'current' => request()->routeIs('cajadeherramientas'),
-            ],
-            [
-                'name' => 'Clases con alma',
-                'icon' => 'academic-cap',
-                'url' => route('clasesconalma'),
-                'current' => request()->routeIs('clasesconalma'),
-            ],
-            [
-                'name' => 'Tu pausa necesaria',
-                'icon' => 'battery-50',
-                'url' => route('tupausanecesaria'),
-                'current' => request()->routeIs('tupausanecesaria'),
-            ],
-            [
-                'name' => 'Al día',
-                'icon' => 'sun',
-                'url' => route('aldia'),
-                'current' => request()->routeIs('aldia'),
-            ],
+        //     [
+        //         'name' => 'Aquí empieza todo',
+        //         'icon' => 'home',
+        //         'url' => route('aquiempiezatodo'),
+        //         'current' => request()->routeIs('aquiempiezatodo'),
+        //     ],
+        //     [
+        //         'name' => 'Tu camino docente',
+        //         'icon' => 'map',
+        //         'url' => route('tucaminodocente'),
+        //         'current' => request()->routeIs('tucaminodocente'),
+        //     ],
+        //     [
+        //         'name' => 'Caja de herramientas',
+        //         'icon' => 'rectangle-stack',
+        //         'url' => route('cajadeherramientas'),
+        //         'current' => request()->routeIs('cajadeherramientas'),
+        //     ],
+        //     [
+        //         'name' => 'Clases con alma',
+        //         'icon' => 'academic-cap',
+        //         'url' => route('clasesconalma'),
+        //         'current' => request()->routeIs('clasesconalma'),
+        //     ],
+        //     [
+        //         'name' => 'Tu pausa necesaria',
+        //         'icon' => 'battery-50',
+        //         'url' => route('tupausanecesaria'),
+        //         'current' => request()->routeIs('tupausanecesaria'),
+        //     ],
+        //     [
+        //         'name' => 'Al día',
+        //         'icon' => 'sun',
+        //         'url' => route('aldia'),
+        //         'current' => request()->routeIs('aldia'),
+        //     ],
             // [
             //     'name' => '¿Cómo van tus estudiantes?',
             //     'icon' => 'chart-pie',

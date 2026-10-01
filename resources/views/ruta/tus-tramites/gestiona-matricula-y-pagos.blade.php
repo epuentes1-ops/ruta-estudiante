@@ -340,12 +340,36 @@
                                 tu situación.<br><br>
                                 Porque antes de sacar la calculadora, vale la pena conocer tus opciones.
                             </p>
+                            <br>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <flux:button href="https://ucompensar.edu.co"
+                                    target="_blank" rel="noopener noreferrer" icon="building-office-2"
+                                    variant="filled"
+                                    class="!bg-[#7C3AED] !text-white
+                                        hover:!bg-[#362651]
+                                        dark:!bg-[#7C3AED] dark:!text-white
+                                        dark:hover:!bg-[#b49bec]  dark:hover:!text-gray-900
+                                        transition-all duration-300">
+                                    Ir a UCompensar
+                                </flux:button>
+                                <flux:button href="https://ucompensar.edu.co/zona-financiera-ucompensar/"
+                                    target="_blank" rel="noopener noreferrer" icon="document-currency-dollar"
+                                    variant="filled"
+                                    class="!bg-[#7C3AED] !text-white
+                                        hover:!bg-[#362651]
+                                        dark:!bg-[#7C3AED] dark:!text-white
+                                        dark:hover:!bg-[#b49bec]  dark:hover:!text-gray-900
+                                        transition-all duration-300">
+                                    Ir a Zona financiera
+                                </flux:button>
+                            </div>
+
                         </div>
                         <!-- video -->
                         <div class="w-full md:w-2/3 rounded-xl overflow-hidden shadow-lg">
                             <div class="aspect-video">
-                                <iframe title="video-crear-solicitudes-CRM"
-                                    src="https://player.vimeo.com/video/834164515?badge=0&autopause=0&player_id=0&app_id=58479%22"
+                                <iframe title="Consulta apoyos económicos y orientación financiera"
+                                    src="https://player.vimeo.com/video/1230929967?badge=0&autopause=0&player_id=0&app_id=58479%22"
                                     class="w-full h-full" frameborder="0"
                                     referrerpolicy="strict-origin-when-cross-origin"
                                     allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
@@ -383,8 +407,9 @@
                         <div class="w-full md:w-2/3 rounded-xl overflow-hidden shadow-lg">
                             <div class="aspect-video">
                                 <iframe title="video-consulta-horarios"
-                                    src="https://player.vimeo.com/video/1229563619?badge=0&autopause=0&player_id=0&app_id=58479%22" class="w-full h-full"
-                                    frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
+                                    src="https://player.vimeo.com/video/1229563619?badge=0&autopause=0&player_id=0&app_id=58479%22"
+                                    class="w-full h-full" frameborder="0"
+                                    referrerpolicy="strict-origin-when-cross-origin"
                                     allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                                     allowfullscreen>
                                 </iframe>
@@ -395,16 +420,17 @@
                         <div class="w-full md:w-1/3 text-center md:text-left">
                             <p
                                 class="text-sm sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
-                                <strong>Tu horario es el mapa de tu semestre: te muestra tus clases, grupos, asignaturas y momentos para que puedas organizar tu tiempo y disfrutar mejor cada etapa de la U.
+                                <strong>Tu horario es el mapa de tu semestre: te muestra tus clases, grupos, asignaturas
+                                    y momentos para que puedas organizar tu tiempo y disfrutar mejor cada etapa de la U.
                                 </strong><br><br>
-                                Aquí te mostramos cómo consultarlo de forma rápida y tener toda esta información a la mano desde el Campus Virtual.
+                                Aquí te mostramos cómo consultarlo de forma rápida y tener toda esta información a la
+                                mano desde el Campus Virtual.
                             </p>
 
                             <br>
                             <div class="flex flex-col sm:flex-row gap-4">
                                 <flux:button href="https://academico.ucompensar.edu.co/consultaHorario/"
-                                    target="_blank" rel="noopener noreferrer" icon="table-cells"
-                                    variant="filled"
+                                    target="_blank" rel="noopener noreferrer" icon="table-cells" variant="filled"
                                     class="!bg-[#7C3AED] !text-white
                                         hover:!bg-[#362651]
                                         dark:!bg-[#7C3AED] dark:!text-white

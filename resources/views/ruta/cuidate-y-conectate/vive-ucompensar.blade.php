@@ -957,11 +957,11 @@
 
         
         <!-- Sección Texto + video -->
-        {{-- <div class="flex flex-col md:flex-row items-center justify-center gap-6 max-w-6xl mx-auto mt-8 px-4">
+        <div class="flex flex-col md:flex-row items-center justify-center gap-6 max-w-6xl mx-auto mt-8 px-4">
 
             
             <!-- Texto -->
-            <div class="w-full md:w-1/3 text-center md:text-left">
+            <div class="w-full md:w-2/3 text-center md:text-left">
                 <h3
                 class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-gray-900 dark:text-white leading-relaxed text-left">
                 Bachata
@@ -973,13 +973,27 @@
                     paso a paso. Una experiencia para moverte, practicar y disfrutar la música mientras conviertes esos
                     primeros pasos en puro flow.
                 </p>
+                <br>
+                <div class="flex flex-col sm:flex-row gap-4">
+
+                    <flux:button
+                        href="https://forms.cloud.microsoft/r/9B94fuwXdq"
+                        target="_blank" rel="noopener noreferrer" icon="document-check" variant="filled"
+                        class="!bg-[#7C3AED] !text-white
+               hover:!bg-[#362651]
+               dark:!bg-[#7C3AED] dark:!text-white
+               dark:hover:!bg-[#b49bec]  dark:hover:!text-gray-900
+               transition-all duration-300">
+                        Inscribete aquí
+                    </flux:button>
+                </div>
             </div>
 
             <!-- Genially -->
             <div class="w-full md:w-2/3 rounded-xl overflow-hidden shadow-lg">
                 <div class="aspect-video">
-                    <iframe title="video-correo"
-                        src="https://player.vimeo.com/video/1229528893?badge=0&autopause=0&player_id=0&app_id=58479%22"
+                    <iframe title="Bachata"
+                        src="https://player.vimeo.com/video/1231359656?badge=0&autopause=0&player_id=0&app_id=58479"
                         class="w-full h-full" frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
                         allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                         allowfullscreen>
@@ -995,8 +1009,8 @@
 
             <div class="w-full md:w-2/3 rounded-xl overflow-hidden shadow-lg">
                 <div class="aspect-video">
-                    <iframe title="OneDrive"
-                        src="https://player.vimeo.com/video/996267166?badge=0&autopause=0&player_id=0&app_id=58479%22"
+                    <iframe title="Guitarra"
+                        src="https://player.vimeo.com/video/1231428702?badge=0&autopause=0&player_id=0&app_id=58479"
                         class="w-full h-full" frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
                         allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                         allowfullscreen>
@@ -1005,7 +1019,7 @@
             </div>
 
             <!-- Texto -->
-            <div class="w-full md:w-1/3 text-center md:text-left">
+            <div class="w-full md:w-2/3 text-center md:text-left">
                 <h3
                 class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-gray-900 dark:text-white leading-relaxed text-left">
                 Guitarra
@@ -1016,8 +1030,22 @@
                     historias, ejercicios y recursos para practicar, empieza a soltar los dedos, encontrar tu ritmo y
                     hacer que la guitarra suene a ti.
                 </p>
+                 <br>
+                <div class="flex flex-col sm:flex-row gap-4">
+
+                    <flux:button
+                        href="https://forms.cloud.microsoft/r/9B94fuwXdq"
+                        target="_blank" rel="noopener noreferrer" icon="document-check" variant="filled"
+                        class="!bg-[#7C3AED] !text-white
+               hover:!bg-[#362651]
+               dark:!bg-[#7C3AED] dark:!text-white
+               dark:hover:!bg-[#b49bec]  dark:hover:!text-gray-900
+               transition-all duration-300">
+                        Inscribete aquí
+                    </flux:button>
+                </div>
             </div>
-        </div> --}}
+        </div>
 
         
 

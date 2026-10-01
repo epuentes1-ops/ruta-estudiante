@@ -36,25 +36,7 @@ Route::view('empieza-por-aqui', 'empieza-por-aqui')
     ->middleware(['auth', 'verified'])
     ->name('empieza-por-aqui');
 
-Route::view('tucaminodocente', 'tucaminodocente')
-    ->middleware(['auth', 'verified'])
-    ->name('tucaminodocente');
 
-Route::view('cajadeherramientas', 'cajadeherramientas')
-    ->middleware(['auth', 'verified'])
-    ->name('cajadeherramientas');
-
-Route::view('clasesconalma', 'clasesconalma')
-    ->middleware(['auth', 'verified'])
-    ->name('clasesconalma');
-
-Route::view('tupausanecesaria', 'tupausanecesaria')
-    ->middleware(['auth', 'verified'])
-    ->name('tupausanecesaria');
-
-Route::view('aldia', 'aldia')
-    ->middleware(['auth', 'verified'])
-    ->name('aldia');
 
 
 
