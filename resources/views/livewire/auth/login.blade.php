@@ -141,7 +141,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
     <x-auth-header :title="__('Conoce la Ruta del Estudiante')" :description="__('👉 Comienza aquí')" />
 
     <!-- Session Status -->
-    <x-auth-session-status class="text-center" :status="session('status')" />
+    {{-- <x-auth-session-status class="text-center" :status="session('status')" />
 
     <form method="POST" wire:submit="login" class="flex flex-col gap-6">
         <!-- Email Address -->
@@ -168,12 +168,33 @@ new #[Layout('components.layouts.auth')] class extends Component {
                 {{ __('Iniciar Sesión') }}
             </flux:button>
         </div>
-    </form>
+    </form> --}}
 
     {{-- LOGIN MICROSOFT --}}
     <div class="flex flex-col gap-4">
 
-        {{-- CHECKBOX POLÍTICA --}}
+       
+
+        {{-- BOTÓN MICROSOFT --}}
+        <flux:button type="button" variant="primary" wire:click="goToSamlLogin"
+            class="w-full focus:ring-2 focus:ring-offset-2 focus:ring-[#2F2FEE]" color="violet"
+            wire:loading.attr="disabled">
+
+            <div class="flex items-center justify-center gap-2">
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23" class="w-5 h-5 fill-white">
+                    <path d="M0 0h10.5v10.5H0zM12.5 0H23v10.5H12.5zM0 12.5h10.5V23H0zM12.5 12.5H23V23H12.5z" />
+                </svg>
+
+                <span>
+                    Iniciar sesión con Microsoft
+                </span>
+
+            </div>
+
+        </flux:button>
+
+         {{-- CHECKBOX POLÍTICA --}}
         <div class="rounded-lg border border-zinc-200 dark:border-zinc-700 p-4">
 
             <flux:checkbox wire:model="acceptDataPolicy"
@@ -198,25 +219,6 @@ new #[Layout('components.layouts.auth')] class extends Component {
             @enderror --}}
 
         </div>
-
-        {{-- BOTÓN MICROSOFT --}}
-        <flux:button type="button" variant="primary" wire:click="goToSamlLogin"
-            class="w-full focus:ring-2 focus:ring-offset-2 focus:ring-[#2F2FEE]" color="violet"
-            wire:loading.attr="disabled">
-
-            <div class="flex items-center justify-center gap-2">
-
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23" class="w-5 h-5 fill-white">
-                    <path d="M0 0h10.5v10.5H0zM12.5 0H23v10.5H12.5zM0 12.5h10.5V23H0zM12.5 12.5H23V23H12.5z" />
-                </svg>
-
-                <span>
-                    Iniciar sesión con Microsoft
-                </span>
-
-            </div>
-
-        </flux:button>
 
     </div>
 
