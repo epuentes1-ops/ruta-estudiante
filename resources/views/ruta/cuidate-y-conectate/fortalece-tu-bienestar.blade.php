@@ -86,7 +86,7 @@
 
                 [
                     'numero' => '05',
-                    'categoria' => 'Manejo del estres',
+                    'categoria' => 'Manejo del estrés',
                     'titulo' => 'Maneja el estrés y la ansiedad durante el semestre',
 
                     'descripcion' => [
