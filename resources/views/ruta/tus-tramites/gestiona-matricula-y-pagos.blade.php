@@ -46,7 +46,7 @@
                         <div class="w-full md:w-1/3 text-center md:text-left">
                             <p
                                 class="text-sm sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
-                                <strong>¿Llegó el momento de matricularte y estás como: bueno… ¿y ahora qué
+                                <strong>Llegó el momento de matricularte y estás como: bueno… ¿y ahora qué
                                     hago?</strong><br><br>
                                 Tranqui. Antes de que el semestre arranque, hay varios pasos que debes tener claros:
                                 cuándo matricularte, cómo inscribir tus cursos y cómo hacer el pago.<br><br>
@@ -190,9 +190,9 @@
                         <div class="w-full md:w-1/3 text-center md:text-left">
                             <p
                                 class="text-sm sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
-                                <strong>¿Llegó el momento de la matrícula y ya estás pensando: “¿Dónde miro cuánto tengo
+                                <strong>Llegó el momento de la matrícula y ya estás pensando: “¿Dónde miro cuánto tengo
                                     que
-                                    pagar?” o “¿será que ya aparece mi recibo?</strong><br><br>
+                                    pagar?” o “¿será que ya aparece mi recibo?"</strong><br><br>
                                 Antes de correr a pagar, primero revisa qué tienes disponible, qué está pendiente y si
                                 los valores aplicados están correctos. En este video te mostramos la ruta para consultar
                                 el estado de tu matrícula y tus recibos de forma rápida y saber exactamente qué tienes

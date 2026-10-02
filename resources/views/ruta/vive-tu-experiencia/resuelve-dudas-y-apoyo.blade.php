@@ -61,7 +61,7 @@
                             <div class="flex flex-col sm:flex-row gap-4">
 
                                 <flux:button
-                                    href="https://bancodecontenidos.ucompensar.edu.co/index.php/s/PfHRMbSdp3zRdtn/preview"
+                                    href="https://bancodecontenidos.ucompensar.edu.co/index.php/s/PfHRMbSdp3zRdtn"
                                     target="_blank" rel="noopener noreferrer" icon="document-arrow-down"
                                     variant="filled"
                                     class="!bg-[#7C3AED] !text-white

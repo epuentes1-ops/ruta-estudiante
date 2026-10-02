@@ -121,9 +121,7 @@
                 <div x-show="activeTab === 'progreso'" x-transition>
                     <p class="mb-6 text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
                         <strong>¿Quieres saber cómo vas en tus cursos sin esperar hasta el final?</strong><br><br>
-                        En la U puedes revisar tu progreso académico en cualquier momento del semestre. <br><br>
-                        En este video te mostramos cómo hacerlo, paso a paso, para que tengas claridad sobre tu avance
-                        y puedas tomar decisiones a tiempo.<br><br>
+                        
                         Aquí podrás revisar tus notas, ver tu avance y detectar a tiempo qué va bien, y dónde necesitas
                         ponerle un poquito más de atención.
                     </p>

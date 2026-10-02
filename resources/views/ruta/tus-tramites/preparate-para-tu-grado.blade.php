@@ -78,9 +78,9 @@
         </div>
 
         <!-- Sección Texto + Genially -->
-        <div class="flex flex-col md:flex-row items-center justify-center gap-6 max-w-6xl mx-auto mt-8 px-4">
+       
             <!-- Texto -->
-            <div class="w-full md:w-1/3 text-center md:text-left">
+            <div class="w-full md:w-2/3 text-center md:text-left">
                 <p class="text-sm sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
                     Llegaste a una de las etapas más emocionantes de tu camino: ¡el grado!
                     Aquí encuentras la ruta para conocer cada paso, organizarte y disfrutar este momento mientras te
@@ -111,7 +111,7 @@
                     </iframe>
                 </div>
             </div>
-        </div>
+        
 
 
 

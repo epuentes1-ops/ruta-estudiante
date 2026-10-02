@@ -112,7 +112,7 @@
                 <!-- TAB 2: preparate -->
                 <div x-show="activeTab === 'preparate'" x-transition>
                     <p class="mb-6 text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
-                        Clase virtual en 10 minutos y todavía estás buscando dónde sentarte, cargando el computador y
+                        ¿Clase virtual en 10 minutos y todavía estás buscando dónde sentarte, cargando el computador y
                         pensando qué iban a ver hoy?<br><br>
                         Aquí encuentras tips sencillos para llegar preparado, participar y sacarle más provecho a tus
                         encuentros sincrónicos.
